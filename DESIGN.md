@@ -1,30 +1,23 @@
-# Juice Bar Company redesign for Digital Bar
+# Pa’lais-led refinement
 
-## Brief and reference lock
+Brief: refine the existing complete Juice Bar storefront for simpler, more beautiful shopping, using the user's explicit Pa’lais reference. Existing catalog, pricing, ingredients, and shopping behavior stay intact.
 
-Redesign the entire public Juice Bar Company storefront using the user-approved Pa’lais × Hartzler direction. Goal: communicate the actual offering and make browsing, choosing products, comparing packages, and reaching checkout clearer. Direct build is explicitly authorized with design autonomy.
+Reference lock: Pa’lais (https://www.palais.bio/, Refero style 96e33985-645f-449f-8901-02a97a3f81dc). The user-provided older Refero UUID is unavailable; the current same-site style was retrieved instead. Preserve white/ghost-frost canvas, ocean-blue functional ink, playful condensed display headings, handwritten subheads, botanical line motifs, curved decorative color fields, and rounded primary actions. Secondary Misuko reference (32027352-da9e-42e3-838e-476d81d5e316) contributes only restrained card chrome and readable product hierarchy. No palette averaging.
 
-Primary visual reference: the combined site built in this conversation. Preserve Work Sans 900 billboard lettering, floating real product photography, indigo functional ink, white product stages, cream editorial sections, mint and butter-yellow display accents, outlined pills, and spare line details. Product labels retain the Juice Bar’s green/red branding. No Pa’lais packaging, wordmark, or copy carries into the client site.
-
-Hero: giant JUICY lettering behind an edited composition of three real Juice Bar bottles, a concise cold-pressed proposition, shopping CTA, and local pickup. Secondary sections explain flavor choice, six categories, cleanse package comparison, family-owned story, and educational articles. Product pages use real ingredients and options rather than unsupported health promises.
-
-## Decision ledger
-
-| Decision | Source | Purpose |
+| Decision | Source role | Application |
 |---|---|---|
-| Oversized mint hero lettering and real bottle collage | Approved combined design and Hartzler reference | Memorable product-first opening |
-| Cream canvas, indigo text, white product stages | Approved combined design and Pa’lais reference | Warm editorial identity with readable shopping controls |
-| 21 products and 6 collections | Public Shopify catalog and collection endpoints | Complete offering, no invented products |
-| Price, variant IDs, availability and ingredients | Public product JSON and label photographs | Accurate selection and checkout handoff |
-| Jug flavor choices before add-to-cart | Original descriptions request checkout notes | Prevent missed flavor instructions |
-| 1/2/3-day comparison with 6/12/18 bottles | Original package descriptions | Clear package differences |
-| Family-owned story and Pennsauken contact | Original about/contact pages | Concrete local identity |
-| Search, sorting, cart, quantity and notes | Original platform functions | Preserve commerce journey in the redesign |
+| Split hero with generous space | Pa’lais visual hierarchy and Misuko product focus | A short fresh-by-nature headline, one main shopping CTA, actual bottle composition |
+| Playful condensed display font | Pa’lais hero typography | Smaller, easier-to-read headings; replace heavy Work Sans billboards |
+| Handwritten accent | Pa’lais secondary typography | One supporting phrase in the hero; restrained use elsewhere |
+| White/ocean-blue functional system | Pa’lais canvas and action roles | Clear navigation and filled primary shop/add-to-bag buttons |
+| Organic yellow shape and line leaves | Pa’lais decorative-only colors/media | Frame bottles without obscuring the product labels |
+| Quiet product cards and concise copy | Misuko restrained commerce pattern | Products, ingredients, and price remain the important content |
+| Complete 21-product storefront | User brief and audited catalog | Preserve collections, details, search, gift/jug selection and cart |
 
-## Media
+Reject: giant background words on every page, multiple stamps and competing hero captions, repeated oversized slogan sections, heavy card borders, decorative shadows on controls, and unsupported product promises.
 
-Original catalog photographs are locally hosted and optimized. Hero uses ImageGen built-in editing to extract and arrange the original Green Supreme, Sunny Day, and Beet It bottles. Generated asset prompts and provenance are recorded in research/media.md. No invented testimonials, discounts, nutrition panels, store hours, or shipping promises.
+QA: compare desktop/mobile render to the locked reference; verify page/asset coverage and core product/cart interactions after visual changes. Production integration limitations remain in AUDIT.md.
 
 ## Delivery scope
 
-Private staged redesign, not an edit to the live Shopify theme. All public catalog/content routes receive new layouts. Local cart persists in the browser and links to the existing Shopify store for secure checkout. Customer accounts remain with Shopify. Newsletter signup is a clearly identified staging preview pending Shopify integration; contact actions use the published email/phone. Store policies and operating hours not present in public source are not invented.
+Private staged redesign, not an edit to the live Shopify theme. All 21 catalog products and public content routes use the refined visual system. The local cart persists and links to the existing Shopify store for secure checkout. Customer accounts remain with Shopify. Newsletter signup remains a clearly identified preview pending integration. Source evidence, original screenshots, and integration limitations remain in AUDIT.md.

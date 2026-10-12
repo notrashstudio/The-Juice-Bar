@@ -1,0 +1,594 @@
+[
+  {
+    "route": "/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "FRESH BYNATURE.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/all/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Shop all products",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/frontpage/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Cold Pressed Juice",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/juice-cleanse/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Juice Cleanse Packages",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/wellness-shots/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Wellness Shots",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/sea-moss/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Sea Moss",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/1-2-gallon-jugs/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Half-gallon Jugs",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/collections/gift-cards/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Gift Cards",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/pages/about-us/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "FAMILY ROOTS.FRESH THINKING.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/pages/contact-us/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "YOUR LOCALGOOD STUFF.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/pages/faq/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "LET’S CLEARTHINGS UP.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/blogs/news/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "THE JUICE JOURNAL.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/blogs/news/what-is-cold-pressed-juice/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "What is cold-pressed juice?",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/blogs/news/why-drink-cold-pressed-juice/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Why drink cold-pressed juice?",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/search/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "WHAT AREYOU CRAVING?",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/cart/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "YOURGOOD STUFF.",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/watermelon-punch/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Watermelon Punch",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/1-2-gallon-elderberry-tea/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Half-gallon Elderberry Tea",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/1-2-gallon-alka-lime-strawberry-lemonade/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Half-gallon Alka-lime / Strawberry Lemonade",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/1-2-gallon-cold-pressed-juice/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Half-gallon Cold Pressed Juice",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/refresh/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Refresh",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/cold-pressed-juice/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Green Supreme",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/strawberry-lemonade/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Strawberry Lemonade",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/16-oz-sea-moss/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Sea Moss Gel",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/wake-up/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Wake Up!",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/cayenne-ginger-hot-shot/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Cayenne Ginger (Hot Shot!)",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/pineapple-ginger-shot/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Pineapple Ginger Shot",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/apple-ginger-shot/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Apple Ginger Shot",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/the-juice-bar-juice-company-gift-card/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "The Juice Bar Gift Card",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/1-day-juice-cleanse/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "1 Day Juice Cleanse",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/3-day-juice-cleanse/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "3 Day Juice Cleanse",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/2-day-juice-cleanse/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "2 Day Juice Cleanse",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/ginger-ale/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Ginger Ale",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/flu-shot/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Flu Shot",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/cold-pressed-juice-1/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Sunny Day",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/beet-it/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Beet It",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/products/alka-lime/",
+    "viewport": 1440,
+    "brokenImages": [],
+    "h1": "Alka-lime",
+    "scroll": 1440,
+    "width": 1440
+  },
+  {
+    "route": "/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "FRESH BYNATURE.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/all/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Shop all products",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/frontpage/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Cold Pressed Juice",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/juice-cleanse/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Juice Cleanse Packages",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/wellness-shots/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Wellness Shots",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/sea-moss/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Sea Moss",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/1-2-gallon-jugs/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Half-gallon Jugs",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/collections/gift-cards/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Gift Cards",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/pages/about-us/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "FAMILY ROOTS.FRESH THINKING.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/pages/contact-us/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "YOUR LOCALGOOD STUFF.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/pages/faq/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "LET’S CLEARTHINGS UP.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/blogs/news/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "THE JUICE JOURNAL.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/blogs/news/what-is-cold-pressed-juice/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "What is cold-pressed juice?",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/blogs/news/why-drink-cold-pressed-juice/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Why drink cold-pressed juice?",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/search/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "WHAT AREYOU CRAVING?",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/cart/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "YOURGOOD STUFF.",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/watermelon-punch/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Watermelon Punch",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/1-2-gallon-elderberry-tea/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Half-gallon Elderberry Tea",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/1-2-gallon-alka-lime-strawberry-lemonade/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Half-gallon Alka-lime / Strawberry Lemonade",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/1-2-gallon-cold-pressed-juice/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Half-gallon Cold Pressed Juice",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/refresh/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Refresh",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/cold-pressed-juice/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Green Supreme",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/strawberry-lemonade/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Strawberry Lemonade",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/16-oz-sea-moss/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Sea Moss Gel",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/wake-up/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Wake Up!",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/cayenne-ginger-hot-shot/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Cayenne Ginger (Hot Shot!)",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/pineapple-ginger-shot/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Pineapple Ginger Shot",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/apple-ginger-shot/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Apple Ginger Shot",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/the-juice-bar-juice-company-gift-card/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "The Juice Bar Gift Card",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/1-day-juice-cleanse/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "1 Day Juice Cleanse",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/3-day-juice-cleanse/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "3 Day Juice Cleanse",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/2-day-juice-cleanse/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "2 Day Juice Cleanse",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/ginger-ale/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Ginger Ale",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/flu-shot/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Flu Shot",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/cold-pressed-juice-1/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Sunny Day",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/beet-it/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Beet It",
+    "scroll": 390,
+    "width": 390
+  },
+  {
+    "route": "/products/alka-lime/",
+    "viewport": 390,
+    "brokenImages": [],
+    "h1": "Alka-lime",
+    "scroll": 390,
+    "width": 390
+  }
+]
