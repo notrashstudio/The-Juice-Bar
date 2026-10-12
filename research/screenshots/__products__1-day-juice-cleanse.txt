@@ -1,0 +1,122 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "1 Day Juice Cleanse":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/4DDFC8A8-65B1-4D8A-8A9E-E0C4E0461F6E_1024x1024.png?v=1733683833
+    - img "1 Day Juice Cleanse"
+  - link "1 Day Juice Cleanse":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/4DDFC8A8-65B1-4D8A-8A9E-E0C4E0461F6E_480x480.png?v=1733683833
+    - img "1 Day Juice Cleanse"
+  - link "1 Day Juice Cleanse":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/FullSizeRender_5dc5d7c9-cb73-408c-aac0-3246a3561148_480x480.jpg?v=1733683833
+    - img "1 Day Juice Cleanse"
+  - heading "1 Day Juice Cleanse" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $36.00
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - link "More payment options":
+    - /url: "#"
+  - separator
+  - paragraph: A variety of 6 Cold Pressed Juices designed to boost the immune system, provide digestive relief, & aid in the process of detoxification. Juices are meant to be consumed every 2.5-3 hours with WATER in between each one. NO SOLID FOOD OR ANY OTHER BEVERAGES!
+  - paragraph: Great for the beginner juicer or anyone interested in taking a short break from solid food.
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/1-day-juice-cleanse
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=1%20Day%20Juice%20Cleanse&url=https://thejuicebarjuicecompany.com/products/1-day-juice-cleanse
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/1-day-juice-cleanse&media=//thejuicebarjuicecompany.com/cdn/shop/files/4DDFC8A8-65B1-4D8A-8A9E-E0C4E0461F6E_1024x1024.png?v=1733683833&description=1%20Day%20Juice%20Cleanse
+    - generic: Pin on Pinterest
+  - heading "You may also like" [level=4]
+  - link "3 Day Juice Cleanse 3 Day Juice Cleanse Regular price $108":
+    - /url: /products/3-day-juice-cleanse?pr_prod_strat=similar&pr_rec_id=b28f058e6&pr_rec_pid=6698718396613&pr_ref_pid=6698716790981&pr_seq=uniform
+    - img "3 Day Juice Cleanse"
+    - generic: 3 Day Juice Cleanse
+    - generic: Regular price
+    - text: $108
+  - link "2 Day Juice Cleanse 2 Day Juice Cleanse Regular price $72":
+    - /url: /products/2-day-juice-cleanse?pr_prod_strat=similar&pr_rec_id=b28f058e6&pr_rec_pid=6698717774021&pr_ref_pid=6698716790981&pr_seq=uniform
+    - img "2 Day Juice Cleanse"
+    - generic: 2 Day Juice Cleanse
+    - generic: Regular price
+    - text: $72
+  - link "16 oz Sea Moss 16 oz Sea Moss Regular price $18":
+    - /url: /products/16-oz-sea-moss?pr_prod_strat=similar&pr_rec_id=b28f058e6&pr_rec_pid=6698727145669&pr_ref_pid=6698716790981&pr_seq=uniform
+    - img "16 oz Sea Moss"
+    - generic: 16 oz Sea Moss
+    - generic: Regular price
+    - text: $18
+  - link "Refresh Refresh Regular price $6":
+    - /url: /products/refresh?pr_prod_strat=similar&pr_rec_id=b28f058e6&pr_rec_pid=8343150526661&pr_ref_pid=6698716790981&pr_seq=uniform
+    - img "Refresh"
+    - generic: Refresh
+    - generic: Regular price
+    - text: $6
+  - link "Wake Up! Wake Up! Regular price $6":
+    - /url: /products/wake-up?pr_prod_strat=similar&pr_rec_id=b28f058e6&pr_rec_pid=6698552099013&pr_ref_pid=6698716790981&pr_seq=uniform
+    - img "Wake Up!"
+    - generic: Wake Up!
+    - generic: Regular price
+    - text: $6
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

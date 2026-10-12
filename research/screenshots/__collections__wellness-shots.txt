@@ -1,0 +1,85 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "Wellness Shots" [level=1]
+  - paragraph: Ginger Shots for Immune Support
+  - generic: Sort by
+  - combobox "Sort by":
+    - option "Featured"
+    - option "Most relevant"
+    - option "Best selling" [selected]
+    - option "Alphabetically, A-Z"
+    - option "Alphabetically, Z-A"
+    - option "Price, low to high"
+    - option "Price, high to low"
+    - option "Date, old to new"
+    - option "Date, new to old"
+  - link "Pineapple Ginger Shot Pineapple Ginger Shot Regular price $2":
+    - /url: /products/pineapple-ginger-shot
+    - img "Pineapple Ginger Shot"
+    - generic: Pineapple Ginger Shot
+    - generic: Regular price
+    - text: $2
+  - link "Cayenne Ginger (Hot Shot!) Cayenne Ginger (Hot Shot!) Regular price $2":
+    - /url: /products/cayenne-ginger-hot-shot
+    - img "Cayenne Ginger (Hot Shot!)"
+    - generic: Cayenne Ginger (Hot Shot!)
+    - generic: Regular price
+    - text: $2
+  - link "Apple Ginger Shot Apple Ginger Shot Regular price $1":
+    - /url: /products/apple-ginger-shot
+    - img "Apple Ginger Shot"
+    - generic: Apple Ginger Shot
+    - generic: Regular price
+    - text: $1
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

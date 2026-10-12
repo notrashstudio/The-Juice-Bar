@@ -1,0 +1,91 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "Strawberry Lemonade":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/DBA1241B-C9F5-443C-8658-7056C17D0583_1024x1024.png?v=1720047970
+    - img "Strawberry Lemonade"
+  - link "Strawberry Lemonade":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/DBA1241B-C9F5-443C-8658-7056C17D0583_480x480.png?v=1720047970
+    - img "Strawberry Lemonade"
+  - link "Strawberry Lemonade":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/E3C505F6-3DEF-4F14-96D5-2A4BD35C3894_480x480.png?v=1720047969
+    - img "Strawberry Lemonade"
+  - heading "Strawberry Lemonade" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $3.99
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - link "More payment options":
+    - /url: "#"
+  - separator
+  - paragraph: A refreshing blend of strawberry, lemon, water, & agave
+  - paragraph
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/strawberry-lemonade
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=Strawberry%20Lemonade&url=https://thejuicebarjuicecompany.com/products/strawberry-lemonade
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/strawberry-lemonade&media=//thejuicebarjuicecompany.com/cdn/shop/files/DBA1241B-C9F5-443C-8658-7056C17D0583_1024x1024.png?v=1720047970&description=Strawberry%20Lemonade
+    - generic: Pin on Pinterest
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

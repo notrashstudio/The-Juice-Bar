@@ -1,0 +1,59 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "Why Drink Cold Pressed Juice? RSS" [level=1]:
+    - text: Why Drink Cold Pressed Juice?
+    - link "RSS":
+      - /url: https://thejuicebarjuicecompany.com/blogs/why-drink-cold-pressed-juice.atom
+      - generic: RSS
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

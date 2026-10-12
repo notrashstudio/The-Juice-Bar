@@ -1,0 +1,85 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "1/2 Gallon Jugs" [level=1]
+  - paragraph: One half gallon cold pressed juice
+  - generic: Sort by
+  - combobox "Sort by":
+    - option "Featured"
+    - option "Most relevant"
+    - option "Best selling" [selected]
+    - option "Alphabetically, A-Z"
+    - option "Alphabetically, Z-A"
+    - option "Price, low to high"
+    - option "Price, high to low"
+    - option "Date, old to new"
+    - option "Date, new to old"
+  - link "1/2 Gallon Cold Pressed Juice 1/2 Gallon Cold Pressed Juice Regular price $25":
+    - /url: /products/1-2-gallon-cold-pressed-juice
+    - img "1/2 Gallon Cold Pressed Juice"
+    - generic: 1/2 Gallon Cold Pressed Juice
+    - generic: Regular price
+    - text: $25
+  - link "1/2 Gallon Alka-Lime/Strawberry Lemonade 1/2 Gallon Alka-Lime/Strawberry Lemonade Regular price $15":
+    - /url: /products/1-2-gallon-alka-lime-strawberry-lemonade
+    - img "1/2 Gallon Alka-Lime/Strawberry Lemonade"
+    - generic: 1/2 Gallon Alka-Lime/Strawberry Lemonade
+    - generic: Regular price
+    - text: $15
+  - link "1/2 Gallon Elderberry Tea 1/2 Gallon Elderberry Tea Regular price $20":
+    - /url: /products/1-2-gallon-elderberry-tea
+    - img "1/2 Gallon Elderberry Tea"
+    - generic: 1/2 Gallon Elderberry Tea
+    - generic: Regular price
+    - text: $20
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

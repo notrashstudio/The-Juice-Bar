@@ -1,0 +1,91 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "Flu Shot":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/8B921410-073E-4466-93F1-A3D5E87E3B43_1024x1024.png?v=1720053610
+    - img "Flu Shot"
+  - link "Flu Shot":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/8B921410-073E-4466-93F1-A3D5E87E3B43_480x480.png?v=1720053610
+    - img "Flu Shot"
+  - link "Flu Shot":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/87D399FA-0807-498B-BBAF-31F1725E04CF_480x480.png?v=1720053611
+    - img "Flu Shot"
+  - heading "Flu Shot" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $6.00
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - button
+  - button
+  - separator
+  - paragraph: pineapple, ginger, turmeric, apple, orange
+  - paragraph: Packed with nutrients, vitamins, & antioxidants. Great for the immune system, natural cough suppressant, improves & shortens cold & flu symptoms, headache relief, digestive support, fights inflammation
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/flu-shot
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=Flu%20Shot&url=https://thejuicebarjuicecompany.com/products/flu-shot
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/flu-shot&media=//thejuicebarjuicecompany.com/cdn/shop/files/8B921410-073E-4466-93F1-A3D5E87E3B43_1024x1024.png?v=1720053610&description=Flu%20Shot
+    - generic: Pin on Pinterest
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

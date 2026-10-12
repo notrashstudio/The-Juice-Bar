@@ -1,0 +1,139 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "Cold Pressed Juice" [level=1]
+  - generic: Filter by
+  - combobox "Filter by":
+    - option "All" [selected]
+    - option "cold pressed juice"
+    - option "fresh"
+    - option "juicing"
+    - option "Lemonade"
+    - option "watermelon"
+  - generic: Sort by
+  - combobox "Sort by":
+    - option "Featured"
+    - option "Most relevant"
+    - option "Best selling"
+    - option "Alphabetically, A-Z" [selected]
+    - option "Alphabetically, Z-A"
+    - option "Price, low to high"
+    - option "Price, high to low"
+    - option "Date, old to new"
+    - option "Date, new to old"
+  - link "Alka-lime Alka-lime Regular price $6":
+    - /url: /products/alka-lime
+    - img "Alka-lime"
+    - generic: Alka-lime
+    - generic: Regular price
+    - text: $6
+  - link "Beet It Beet It Regular price $6":
+    - /url: /products/beet-it
+    - img "Beet It"
+    - generic: Beet It
+    - generic: Regular price
+    - text: $6
+  - link "Flu Shot Flu Shot Regular price $6":
+    - /url: /products/flu-shot
+    - img "Flu Shot"
+    - generic: Flu Shot
+    - generic: Regular price
+    - text: $6
+  - link "Ginger Ale Ginger Ale Regular price $6":
+    - /url: /products/ginger-ale
+    - img "Ginger Ale"
+    - generic: Ginger Ale
+    - generic: Regular price
+    - text: $6
+  - link "Green Supreme Green Supreme Regular price $6":
+    - /url: /products/cold-pressed-juice
+    - img "Green Supreme"
+    - generic: Green Supreme
+    - generic: Regular price
+    - text: $6
+  - link "Refresh Refresh Regular price $6":
+    - /url: /products/refresh
+    - img "Refresh"
+    - generic: Refresh
+    - generic: Regular price
+    - text: $6
+  - link "Strawberry Lemonade Strawberry Lemonade Regular price $3.99":
+    - /url: /products/strawberry-lemonade
+    - img "Strawberry Lemonade"
+    - generic: Strawberry Lemonade
+    - generic: Regular price
+    - text: $3.99
+  - link "Sunny Day Sunny Day Regular price $6":
+    - /url: /products/cold-pressed-juice-1
+    - img "Sunny Day"
+    - generic: Sunny Day
+    - generic: Regular price
+    - text: $6
+  - link "The Juice Bar Juice Company Gift Card The Juice Bar Juice Company Gift Card From $10":
+    - /url: /products/the-juice-bar-juice-company-gift-card
+    - img "The Juice Bar Juice Company Gift Card"
+    - generic: The Juice Bar Juice Company Gift Card
+    - generic: From $10
+  - link "Wake Up! Wake Up! Regular price $6":
+    - /url: /products/wake-up
+    - img "Wake Up!"
+    - generic: Wake Up!
+    - generic: Regular price
+    - text: $6
+  - link "Watermelon Punch Watermelon Punch Regular price $6":
+    - /url: /products/watermelon-punch
+    - img "Watermelon Punch"
+    - generic: Watermelon Punch
+    - generic: Regular price
+    - text: $6
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

@@ -1,0 +1,91 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - article:
+    - img "Why Drink Cold Pressed Juice?"
+    - paragraph:
+      - time: August 25, 2021
+    - heading "Why Drink Cold Pressed Juice?" [level=1]
+    - paragraph:
+      - text: Our health should always be top priority & the main thing that drives our decisions when it comes to what we eat & drink. While most of us focus on healthier eating habits, we often neglect to change the beverages we drink. Most drinks on the market (
+      - emphasis: even some who claim to be healthy
+      - text: ) are loaded with sugars, artificial flavors, preservatives & who knows what else?!
+    - paragraph:
+      - text: Our Cold Pressed Juices are 100% fresh & natural made ONLY with fresh fruits, vegetables, & herbs.
+      - strong: Nothing else!
+      - text: Drinking cold pressed juice is a simple way to increase your fruit & veggie intake while quickly flooding your body with nutrients. Adding cold pressed juice to your diet is a guaranteed way to improve your health & boost your immune system.
+    - paragraph: Cold Pressed Juice preserves the nutrients of the fruits & vegetables. As mentioned in our previous blog post, a Cold Pressed Juicer turns produce into juice without the use of any heat, meaning that no nutrients are lost in the process. That means you still get all the nutritional benefits from the fruits & veggies. You get 100% of the vitamins, minerals, & enzymes when you drink cold pressed juice!
+    - paragraph: I’ll drink to that! 😄
+    - separator
+    - generic: Share
+    - link "Share on Facebook":
+      - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/blogs/news/why-drink-cold-pressed-juice
+      - generic: Share on Facebook
+    - link "Tweet on Twitter":
+      - /url: //twitter.com/share?text=Why%20Drink%20Cold%20Pressed%20Juice?&url=https://thejuicebarjuicecompany.com/blogs/news/why-drink-cold-pressed-juice
+      - generic: Tweet on Twitter
+    - link "Pin on Pinterest":
+      - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/blogs/news/why-drink-cold-pressed-juice&media=//thejuicebarjuicecompany.com/cdn/shop/articles/7578DD83-E6C3-4463-8A91-945A019428B6_1024x1024.jpg?v=1629925334&description=Why%20Drink%20Cold%20Pressed%20Juice?
+      - generic: Pin on Pinterest
+    - link "Back to News":
+      - /url: /blogs/news
+      - text: Back to News
+    - heading "Tags" [level=3]
+    - list:
+      - link "blog":
+        - /url: /blogs/news/tagged/blog
+      - link "cold pressed juice":
+        - /url: /blogs/news/tagged/cold-pressed-juice
+      - link "juice":
+        - /url: /blogs/news/tagged/juice
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

@@ -1,0 +1,110 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - button "Site navigation":
+    - generic: Site navigation
+  - heading "The Juice Bar Juice Company" [level=1]:
+    - link "The Juice Bar Juice Company":
+      - /url: /
+      - img "The Juice Bar Juice Company"
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - region "slideshow":
+    - listbox:
+      - option
+      - option
+      - option
+    - heading "Cold Pressed Juice!" [level=2]
+    - generic "Slide 1, current":
+      - generic: 1/3
+    - button "Pause slideshow":
+      - generic: Pause slideshow
+    - list:
+      - button "Previous slide":
+        - generic: Previous slide
+      - button "Next slide":
+        - generic: Next slide
+    - link "View all products":
+      - /url: /collections/all
+      - text: View all products →
+  - link "Cold Pressed Juice View all":
+    - /url: /collections/frontpage
+    - paragraph: Cold Pressed Juice
+    - paragraph: View all
+  - link "Alka-lime Alka-lime Regular price $6":
+    - /url: /products/alka-lime
+    - img "Alka-lime"
+    - generic: Alka-lime
+    - generic: Regular price
+    - text: $6
+  - link "Beet It Beet It Regular price $6":
+    - /url: /products/beet-it
+    - img "Beet It"
+    - generic: Beet It
+    - generic: Regular price
+    - text: $6
+  - link "Flu Shot Flu Shot Regular price $6":
+    - /url: /products/flu-shot
+    - img "Flu Shot"
+    - generic: Flu Shot
+    - generic: Regular price
+    - text: $6
+  - link "Juice Cleanse Packages View all Juice Cleanse Packages":
+    - /url: /collections/juice-cleanse
+    - paragraph: Juice Cleanse Packages
+    - text: View all
+    - img "Juice Cleanse Packages"
+  - link "Sea Moss View all Sea Moss":
+    - /url: /collections/sea-moss
+    - paragraph: Sea Moss
+    - text: View all
+    - img "Sea Moss"
+  - link "Wellness Shots View all Wellness Shots":
+    - /url: /collections/wellness-shots
+    - paragraph: Wellness Shots
+    - text: View all
+    - img "Wellness Shots"
+  - paragraph: We got the juice!
+  - paragraph: Don’t want to eat your fruits & veggies? DRINK THEM! Our Cold Pressed Juices are loaded with vitamins & minerals for the grab-and-go nutrition you need to stay healthy & fueled!
+  - heading "Subscribe to our newsletter" [level=4]
+  - paragraph: Promotions, new products and sales. Directly to your inbox.
+  - generic: Sign up for the latest news, offers and styles
+  - textbox "Sign up for the latest news, offers and styles":
+    - /placeholder: Your email
+  - button "Subscribe":
+    - generic: Subscribe
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

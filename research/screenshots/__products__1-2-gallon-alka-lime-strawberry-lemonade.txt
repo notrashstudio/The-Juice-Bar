@@ -1,0 +1,86 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "1/2 Gallon Alka-Lime/Strawberry Lemonade":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/ED6E442A-7592-4EE8-AC22-8A8F16322478_1024x1024.jpg?v=1751573007
+    - img "1/2 Gallon Alka-Lime/Strawberry Lemonade"
+  - heading "1/2 Gallon Alka-Lime/Strawberry Lemonade" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $15.00
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - link "More payment options":
+    - /url: "#"
+  - separator
+  - paragraph: One half gallon jug of Alka-lime or Strawberry Lemonade
+  - paragraph: Please write which flavor in the “notes” section before checkout!
+  - paragraph
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/1-2-gallon-alka-lime-strawberry-lemonade
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=1/2%20Gallon%20Alka-Lime/Strawberry%20Lemonade&url=https://thejuicebarjuicecompany.com/products/1-2-gallon-alka-lime-strawberry-lemonade
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/1-2-gallon-alka-lime-strawberry-lemonade&media=//thejuicebarjuicecompany.com/cdn/shop/files/ED6E442A-7592-4EE8-AC22-8A8F16322478_1024x1024.jpg?v=1751573007&description=1/2%20Gallon%20Alka-Lime/Strawberry%20Lemonade
+    - generic: Pin on Pinterest
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

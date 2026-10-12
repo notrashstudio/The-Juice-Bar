@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- This is the parent sitemap linking to additional sitemaps for products, collections and pages as shown below. The sitemap can not be edited manually, but is kept up to date in real time. -->
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_agentic_discovery.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_products_1.xml?from=6698548035781&amp;to=8366590689477</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_pages_1.xml?from=83796590789&amp;to=83799179461</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_collections_1.xml?from=268937068741&amp;to=322210267333</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_blogs_1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_articles_1.xml</loc>
+  </sitemap>
+  <sitemap>
+    <loc>https://thejuicebarjuicecompany.com/sitemap_metaobject_pages_1.xml</loc>
+  </sitemap>
+</sitemapindex>

@@ -1,0 +1,201 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "Products" [level=1]
+  - generic: Filter by
+  - combobox "Filter by":
+    - option "All" [selected]
+    - option "cleanse"
+    - option "cold pressed juice"
+    - option "detox"
+    - option "fresh"
+    - option "juice cleanse"
+    - option "juicing"
+    - option "Lemonade"
+    - option "watermelon"
+  - generic: Sort by
+  - combobox "Sort by":
+    - option "Featured"
+    - option "Most relevant"
+    - option "Best selling"
+    - option "Alphabetically, A-Z" [selected]
+    - option "Alphabetically, Z-A"
+    - option "Price, low to high"
+    - option "Price, high to low"
+    - option "Date, old to new"
+    - option "Date, new to old"
+  - link "1 Day Juice Cleanse 1 Day Juice Cleanse Regular price $36":
+    - /url: /products/1-day-juice-cleanse
+    - img "1 Day Juice Cleanse"
+    - generic: 1 Day Juice Cleanse
+    - generic: Regular price
+    - text: $36
+  - link "1/2 Gallon Alka-Lime/Strawberry Lemonade 1/2 Gallon Alka-Lime/Strawberry Lemonade Regular price $15":
+    - /url: /products/1-2-gallon-alka-lime-strawberry-lemonade
+    - img "1/2 Gallon Alka-Lime/Strawberry Lemonade"
+    - generic: 1/2 Gallon Alka-Lime/Strawberry Lemonade
+    - generic: Regular price
+    - text: $15
+  - link "1/2 Gallon Cold Pressed Juice 1/2 Gallon Cold Pressed Juice Regular price $25":
+    - /url: /products/1-2-gallon-cold-pressed-juice
+    - img "1/2 Gallon Cold Pressed Juice"
+    - generic: 1/2 Gallon Cold Pressed Juice
+    - generic: Regular price
+    - text: $25
+  - link "1/2 Gallon Elderberry Tea 1/2 Gallon Elderberry Tea Regular price $20":
+    - /url: /products/1-2-gallon-elderberry-tea
+    - img "1/2 Gallon Elderberry Tea"
+    - generic: 1/2 Gallon Elderberry Tea
+    - generic: Regular price
+    - text: $20
+  - link "16 oz Sea Moss 16 oz Sea Moss Regular price $18":
+    - /url: /products/16-oz-sea-moss
+    - img "16 oz Sea Moss"
+    - generic: 16 oz Sea Moss
+    - generic: Regular price
+    - text: $18
+  - link "2 Day Juice Cleanse 2 Day Juice Cleanse Regular price $72":
+    - /url: /products/2-day-juice-cleanse
+    - img "2 Day Juice Cleanse"
+    - generic: 2 Day Juice Cleanse
+    - generic: Regular price
+    - text: $72
+  - link "3 Day Juice Cleanse 3 Day Juice Cleanse Regular price $108":
+    - /url: /products/3-day-juice-cleanse
+    - img "3 Day Juice Cleanse"
+    - generic: 3 Day Juice Cleanse
+    - generic: Regular price
+    - text: $108
+  - link "Alka-lime Alka-lime Regular price $6":
+    - /url: /products/alka-lime
+    - img "Alka-lime"
+    - generic: Alka-lime
+    - generic: Regular price
+    - text: $6
+  - link "Apple Ginger Shot Apple Ginger Shot Regular price $1":
+    - /url: /products/apple-ginger-shot
+    - img "Apple Ginger Shot"
+    - generic: Apple Ginger Shot
+    - generic: Regular price
+    - text: $1
+  - link "Beet It Beet It Regular price $6":
+    - /url: /products/beet-it
+    - img "Beet It"
+    - generic: Beet It
+    - generic: Regular price
+    - text: $6
+  - link "Cayenne Ginger (Hot Shot!) Cayenne Ginger (Hot Shot!) Regular price $2":
+    - /url: /products/cayenne-ginger-hot-shot
+    - img "Cayenne Ginger (Hot Shot!)"
+    - generic: Cayenne Ginger (Hot Shot!)
+    - generic: Regular price
+    - text: $2
+  - link "Flu Shot Flu Shot Regular price $6":
+    - /url: /products/flu-shot
+    - img "Flu Shot"
+    - generic: Flu Shot
+    - generic: Regular price
+    - text: $6
+  - link "Ginger Ale Ginger Ale Regular price $6":
+    - /url: /products/ginger-ale
+    - img "Ginger Ale"
+    - generic: Ginger Ale
+    - generic: Regular price
+    - text: $6
+  - link "Green Supreme Green Supreme Regular price $6":
+    - /url: /products/cold-pressed-juice
+    - img "Green Supreme"
+    - generic: Green Supreme
+    - generic: Regular price
+    - text: $6
+  - link "Pineapple Ginger Shot Pineapple Ginger Shot Regular price $2":
+    - /url: /products/pineapple-ginger-shot
+    - img "Pineapple Ginger Shot"
+    - generic: Pineapple Ginger Shot
+    - generic: Regular price
+    - text: $2
+  - link "Refresh Refresh Regular price $6":
+    - /url: /products/refresh
+    - img "Refresh"
+    - generic: Refresh
+    - generic: Regular price
+    - text: $6
+  - link "Strawberry Lemonade Strawberry Lemonade Regular price $3.99":
+    - /url: /products/strawberry-lemonade
+    - img "Strawberry Lemonade"
+    - generic: Strawberry Lemonade
+    - generic: Regular price
+    - text: $3.99
+  - link "Sunny Day Sunny Day Regular price $6":
+    - /url: /products/cold-pressed-juice-1
+    - img "Sunny Day"
+    - generic: Sunny Day
+    - generic: Regular price
+    - text: $6
+  - link "The Juice Bar Juice Company Gift Card The Juice Bar Juice Company Gift Card From $10":
+    - /url: /products/the-juice-bar-juice-company-gift-card
+    - img "The Juice Bar Juice Company Gift Card"
+    - generic: The Juice Bar Juice Company Gift Card
+    - generic: From $10
+  - link "Wake Up! Wake Up! Regular price $6":
+    - /url: /products/wake-up
+    - img "Wake Up!"
+    - generic: Wake Up!
+    - generic: Regular price
+    - text: $6
+  - generic: "1"
+  - link "2":
+    - /url: /collections/all?page=2
+  - link "→":
+    - /url: /collections/all?page=2
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

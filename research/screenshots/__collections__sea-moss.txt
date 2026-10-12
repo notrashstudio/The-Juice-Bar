@@ -1,0 +1,77 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "Sea Moss" [level=1]
+  - generic: Sort by
+  - combobox "Sort by":
+    - option "Featured"
+    - option "Most relevant"
+    - option "Best selling" [selected]
+    - option "Alphabetically, A-Z"
+    - option "Alphabetically, Z-A"
+    - option "Price, low to high"
+    - option "Price, high to low"
+    - option "Date, old to new"
+    - option "Date, new to old"
+  - link "16 oz Sea Moss 16 oz Sea Moss Regular price $18":
+    - /url: /products/16-oz-sea-moss
+    - img "16 oz Sea Moss"
+    - generic: 16 oz Sea Moss
+    - generic: Regular price
+    - text: $18
+  - link "The Juice Bar Juice Company Gift Card The Juice Bar Juice Company Gift Card From $10":
+    - /url: /products/the-juice-bar-juice-company-gift-card
+    - img "The Juice Bar Juice Company Gift Card"
+    - generic: The Juice Bar Juice Company Gift Card
+    - generic: From $10
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

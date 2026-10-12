@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/frontpage</loc>
+    <lastmod>2026-10-02T07:13:41-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/79D550E3-EB9A-41C6-94BC-D26ADCCA6743.jpg?v=1720054734</image:loc>
+      <image:title>Cold Pressed Juice</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/sea-moss</loc>
+    <lastmod>2026-10-02T07:13:41-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/2F7D5502-4B2F-49E2-B299-729499EDF187.jpg?v=1720054879</image:loc>
+      <image:title>Sea Moss</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/juice-cleanse</loc>
+    <lastmod>2026-10-12T07:15:51-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/2AF3EA91-099B-424C-870C-B00E2C61470A.jpg?v=1628196403</image:loc>
+      <image:title>Juice Cleanse Packages</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/wellness-shots</loc>
+    <lastmod>2026-08-29T07:13:38-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/image.jpg?v=1629840876</image:loc>
+      <image:title>Wellness Shots</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/gift-cards</loc>
+    <lastmod>2026-08-28T21:07:12-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/4A7E3DA8-EF51-4610-98C8-320EF6B6E635.webp?v=1734801267</image:loc>
+      <image:title>Gift Cards</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/collections/1-2-gallon-jugs</loc>
+    <lastmod>2026-10-12T07:15:51-04:00</lastmod>
+    <changefreq>daily</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/collections/7CB8F89C-8C28-48D8-AD1F-7AA0C8B1A0DB.jpg?v=1751572040</image:loc>
+      <image:title>1/2 Gallon Jugs</image:title>
+    </image:image>
+  </url>
+</urlset>

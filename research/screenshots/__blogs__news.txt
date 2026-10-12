@@ -1,0 +1,107 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - heading "News RSS" [level=1]:
+    - text: News
+    - link "RSS":
+      - /url: https://thejuicebarjuicecompany.com/blogs/news.atom
+      - generic: RSS
+  - paragraph:
+    - time: August 25, 2021
+  - heading "Why Drink Cold Pressed Juice?" [level=2]:
+    - link "Why Drink Cold Pressed Juice?":
+      - /url: /blogs/news/why-drink-cold-pressed-juice
+  - link "Why Drink Cold Pressed Juice?":
+    - /url: /blogs/news/why-drink-cold-pressed-juice
+    - img "Why Drink Cold Pressed Juice?"
+  - paragraph: Our health should always be top priority & the main thing that drives our decisions when it comes to what we eat & drink. While most of us focus on healthier eating habits, we often neglect to change the beverages we drink. Most drinks on the market (even some who claim to be healthy) are loaded with sugars, artificial flavors, preservatives & who knows what else?! Our Cold Pressed Juices are 100% fresh & natural made ONLY with fresh fruits, vegetables, & herbs. Nothing else! Drinking cold pressed juice is a simple way to increase your fruit & veggie intake...
+  - paragraph:
+    - link "Read more":
+      - /url: /blogs/news/why-drink-cold-pressed-juice
+      - strong: Read more
+  - paragraph:
+    - link "blog":
+      - /url: /blogs/news/tagged/blog
+      - strong: blog
+    - text: ","
+    - link "cold pressed juice":
+      - /url: /blogs/news/tagged/cold-pressed-juice
+      - strong: cold pressed juice
+    - text: ","
+    - link "juice":
+      - /url: /blogs/news/tagged/juice
+      - strong: juice
+    - text: "-"
+    - time: August 18, 2021
+  - heading "What is Cold Pressed Juice?" [level=2]:
+    - link "What is Cold Pressed Juice?":
+      - /url: /blogs/news/what-is-cold-pressed-juice
+  - link "What is Cold Pressed Juice?":
+    - /url: /blogs/news/what-is-cold-pressed-juice
+    - img "What is Cold Pressed Juice?"
+  - paragraph: We all know the delicious taste of a fresh fruit & vegetable juice made right in front of you. But what is cold pressed juice & how does that differ fromyour juices made at home? The term “cold pressed” has nothing to do with the actual temperature of the juice. “Cold pressed” refers to the process in which the fruits & vegetables are used to make juice. Cold pressed juice is made with a special type of juicer that pushes fresh produce through a blade, mashes it into pulp, & then collects the pulp into a cheesecloth-like bag. A hydraulic...
+  - paragraph:
+    - link "Read more":
+      - /url: /blogs/news/what-is-cold-pressed-juice
+      - strong: Read more
+  - heading "Tags" [level=6]
+  - list:
+    - link "All":
+      - /url: /blogs/news
+    - link "blog":
+      - /url: /blogs/news/tagged/blog
+    - link "cold pressed juice":
+      - /url: /blogs/news/tagged/cold-pressed-juice
+    - link "juice":
+      - /url: /blogs/news/tagged/juice
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

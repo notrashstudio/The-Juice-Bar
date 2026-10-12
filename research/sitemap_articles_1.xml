@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/blogs/news/what-is-cold-pressed-juice</loc>
+    <lastmod>2021-08-18T13:48:09-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/articles/E8785D6E-96D4-4B11-A5CA-8F10CD925C47.jpg?v=1629308889</image:loc>
+      <image:title>What is Cold Pressed Juice?</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://thejuicebarjuicecompany.com/blogs/news/why-drink-cold-pressed-juice</loc>
+    <lastmod>2021-08-25T17:02:14-04:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://cdn.shopify.com/s/files/1/0574/8870/3685/articles/7578DD83-E6C3-4463-8A91-945A019428B6.jpg?v=1629925334</image:loc>
+      <image:title>Why Drink Cold Pressed Juice?</image:title>
+    </image:image>
+  </url>
+</urlset>

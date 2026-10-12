@@ -1,0 +1,122 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "Beet It":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/95F5C983-6B12-4FDE-88A7-E7264FA76411_1024x1024.png?v=1720054178
+    - img "Beet It"
+  - link "Beet It":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/95F5C983-6B12-4FDE-88A7-E7264FA76411_480x480.png?v=1720054178
+    - img "Beet It"
+  - link "Beet It":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/files/21BA2377-1FB0-468D-B449-83ABEC03423E_480x480.png?v=1720054178
+    - img "Beet It"
+  - heading "Beet It" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $6.00
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - link "More payment options":
+    - /url: "#"
+  - separator
+  - paragraph: beet, apple, lemon, ginger
+  - paragraph: Packed with nutrients, antioxidants & nitrates. Regulates blood pressure, improves circulation, provides digestive relief, improves exercise stamina, prevents anemia
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/beet-it
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=Beet%20It&url=https://thejuicebarjuicecompany.com/products/beet-it
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/beet-it&media=//thejuicebarjuicecompany.com/cdn/shop/files/95F5C983-6B12-4FDE-88A7-E7264FA76411_1024x1024.png?v=1720054178&description=Beet%20It
+    - generic: Pin on Pinterest
+  - heading "You may also like" [level=4]
+  - link "Flu Shot Flu Shot Regular price $6":
+    - /url: /products/flu-shot?pr_prod_strat=similar&pr_rec_id=220a3e68b&pr_rec_pid=6698551640261&pr_ref_pid=6698552623301&pr_seq=uniform
+    - img "Flu Shot"
+    - generic: Flu Shot
+    - generic: Regular price
+    - text: $6
+  - link "Ginger Ale Ginger Ale Regular price $6":
+    - /url: /products/ginger-ale?pr_prod_strat=similar&pr_rec_id=220a3e68b&pr_rec_pid=6698550264005&pr_ref_pid=6698552623301&pr_seq=uniform
+    - img "Ginger Ale"
+    - generic: Ginger Ale
+    - generic: Regular price
+    - text: $6
+  - link "Sunny Day Sunny Day Regular price $6":
+    - /url: /products/cold-pressed-juice-1?pr_prod_strat=similar&pr_rec_id=220a3e68b&pr_rec_pid=6698548691141&pr_ref_pid=6698552623301&pr_seq=uniform
+    - img "Sunny Day"
+    - generic: Sunny Day
+    - generic: Regular price
+    - text: $6
+  - link "Green Supreme Green Supreme Regular price $6":
+    - /url: /products/cold-pressed-juice?pr_prod_strat=similar&pr_rec_id=220a3e68b&pr_rec_pid=6698548035781&pr_ref_pid=6698552623301&pr_seq=uniform
+    - img "Green Supreme"
+    - generic: Green Supreme
+    - generic: Regular price
+    - text: $6
+  - link "Wake Up! Wake Up! Regular price $6":
+    - /url: /products/wake-up?pr_prod_strat=similar&pr_rec_id=220a3e68b&pr_rec_pid=6698552099013&pr_ref_pid=6698552623301&pr_seq=uniform
+    - img "Wake Up!"
+    - generic: Wake Up!
+    - generic: Regular price
+    - text: $6
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat

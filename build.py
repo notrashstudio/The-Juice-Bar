@@ -1,0 +1,209 @@
+from pathlib import Path
+import json, html, re
+
+ROOT=Path(__file__).parent; DIST=ROOT/'dist'; RESEARCH=ROOT/'research'
+def e(s):return html.escape(str(s),quote=True)
+def plain(s):return html.unescape(re.sub('<[^>]*>',' ',s or '')).strip()
+raw=json.load(open(RESEARCH/'products.json'))['products']
+asset_map=json.load(open(RESEARCH/'asset-map.json'))
+
+DETAILS={
+'cold-pressed-juice':('Green Supreme',['Kale','Cucumber','Apple','Lime'],'Green, crisp, and beautifully balanced. Your greens, with a bright apple-and-lime finish.','Green & crisp'),
+'cold-pressed-juice-1':('Sunny Day',['Pineapple','Apple','Orange'],'A little sunshine in a bottle. Pineapple, apple, and orange make a bright, fruit-forward trio.','Sweet & sunny'),
+'alka-lime':('Alka-lime',['Lime','Spring water','Mint','Agave'],'Cool mint meets bright lime, with a little agave sweetness. A refreshing pick for an everyday sip.','Citrus & cool'),
+'beet-it':('Beet It',['Beet','Apple','Lemon','Ginger'],'Earthy beet, sweet apple, a squeeze of lemon, and a ginger kick. Bold from the first sip.','Earthy & bold'),
+'flu-shot':('Flu Shot',['Pineapple','Ginger','Turmeric','Apple','Orange'],'A full-size cold-pressed blend with bright fruit, warming ginger, and turmeric. Not to be confused with our small wellness shots.','Fruit & spice'),
+'ginger-ale':('Ginger Ale',['Apple','Lemon','Ginger','Turmeric'],'Apple and lemon bring the brightness. Ginger and turmeric bring the warming finish.','Zesty & warming'),
+'refresh':('Refresh',['Cucumber','Apple','Lemon','Lime'],'Crisp cucumber, sweet apple, and two kinds of citrus. Fresh, simple, and easy to love.','Light & crisp'),
+'strawberry-lemonade':('Strawberry Lemonade',['Strawberry','Lemon','Water','Agave'],'Strawberry sweetness meets a bright lemon squeeze. A refreshing blend finished with agave.','Sweet & tart'),
+'wake-up':('Wake Up!',['Carrot','Apple','Lemon','Ginger'],'Carrot and apple, brightened with lemon and ginger. A lively start to your next sip.','Bright & rooted'),
+'watermelon-punch':('Watermelon Punch',['Watermelon','Pineapple','Mint','Lime'],'Sweet watermelon, sunny pineapple, cool mint, and a splash of lime. Summer energy, any day.','Sweet & refreshing'),
+'apple-ginger-shot':('Apple Ginger Shot',['Apple','Ginger'],'A small shot with a bold ginger finish and a touch of apple sweetness.','Sweet & spicy'),
+'pineapple-ginger-shot':('Pineapple Ginger Shot',['Pineapple','Ginger'],'Bright pineapple and punchy ginger. A little sip with a lot of character.','Tropical & spicy'),
+'cayenne-ginger-hot-shot':('Cayenne Ginger (Hot Shot!)',['Orange','Ginger','Cayenne'],'Orange and ginger, finished with a dash of cayenne. This one brings the heat.','Hot & zesty'),
+'16-oz-sea-moss':('Sea Moss Gel',[],'A 16 oz jar of sea moss gel for your daily routine. Add 1–2 tablespoons to a smoothie, hot tea, or another food or drink of your choice.','16 oz jar'),
+'1-2-gallon-cold-pressed-juice':('Half-gallon Cold Pressed Juice',[],'More of your favourite blend. A half-gallon jug of cold-pressed juice, with your flavour selected before it goes in your bag.','Half gallon · 64 oz'),
+'1-2-gallon-alka-lime-strawberry-lemonade':('Half-gallon Alka-lime / Strawberry Lemonade',[],'Make room in the fridge. Choose Alka-lime or Strawberry Lemonade in a half-gallon jug.','Half gallon · 64 oz'),
+'1-2-gallon-elderberry-tea':('Half-gallon Elderberry Tea',[],'One half-gallon jug of the Juice Bar’s freshly brewed elderberry tea. Made for a fridge full of good sips.','Half gallon · 64 oz'),
+'the-juice-bar-juice-company-gift-card':('The Juice Bar Gift Card',[],'Let them pick their own good stuff. A digital gift card for cold-pressed juice, cleanse packages, sea moss, and more. Delivered by email and redeemable online.','Digital · delivered by email'),
+}
+for days in range(1,4):
+ DETAILS[f'{days}-day-juice-cleanse']=(f'{days} Day Juice Cleanse',[],f'A selection of {days*6} cold-pressed juices, with six bottles for each day. Choose your package and enjoy the convenience of same-day pickup.',f'{days*6} bottles · {days} '+('day' if days==1 else 'days'))
+
+COLLECTIONS=[
+ {'handle':'frontpage','title':'Cold Pressed Juice','short':'Juices','word':'JUICY','desc':'Fresh fruit, vibrant veg, and blends with personality. Find the one that tastes like your kind of day.','color':'mint'},
+ {'handle':'juice-cleanse','title':'Juice Cleanse Packages','short':'Cleanses','word':'RESET','desc':'One, two, or three days. Six cold-pressed juices each day. Compare your options and pick up your package the same day.','color':'butter'},
+ {'handle':'wellness-shots','title':'Wellness Shots','short':'Shots','word':'KICK','desc':'Small sips. Bold ginger. Choose apple, pineapple, or a cayenne finish.','color':'mint'},
+ {'handle':'sea-moss','title':'Sea Moss','short':'Sea Moss','word':'DAILY','desc':'Sea moss gel for smoothies, hot tea, and whatever is on your menu.','color':'butter'},
+ {'handle':'1-2-gallon-jugs','title':'Half-gallon Jugs','short':'Jugs','word':'MORE','desc':'Big on flavour. Made to share. Bring home more of your favourite juice, lemonade, or freshly brewed elderberry tea.','color':'mint'},
+ {'handle':'gift-cards','title':'Gift Cards','short':'Gifts','word':'GIVE','desc':'A little freshness for someone you love. Let them choose their favourites with a digital gift card.','color':'butter'}]
+for c in COLLECTIONS:
+ c['products']=[p['handle'] for p in json.load(open(RESEARCH/f'collection-{c["handle"]}.json'))['products']]
+ if c['handle']!='gift-cards':c['products']=[h for h in c['products'] if h!='the-juice-bar-juice-company-gift-card']
+
+PRODUCTS=[]
+for p in raw:
+ title,ingredients,desc,flavour=DETAILS[p['handle']]
+ images=[asset_map.get(i['src']) for i in p['images']]
+ images=[i for i in images if i and (DIST/i.lstrip('/')).exists()]
+ assert images,p['handle']
+ if p['handle']=='the-juice-bar-juice-company-gift-card':images.insert(0,'/assets/gift-card.svg')
+ category=next(c for c in COLLECTIONS if p['handle'] in c['products'])
+ PRODUCTS.append({'handle':p['handle'],'title':title,'sourceTitle':p['title'],'ingredients':ingredients,'description':desc,'flavour':flavour,'category':category['handle'],'categoryTitle':category['title'],'images':images,'variants':[{'id':str(v['id']),'title':v['title'],'price':round(float(v['price'])*100),'available':v['available']} for v in p['variants']]})
+P={p['handle']:p for p in PRODUCTS}; C={c['handle']:c for c in COLLECTIONS}
+(DIST/'catalog.js').write_text('window.JUICE_CATALOG='+json.dumps({'products':PRODUCTS,'collections':COLLECTIONS},ensure_ascii=False)+';')
+def price(p):
+ cents=min(v['price'] for v in p['variants']);n=cents/100
+ return ('From ' if len(p['variants'])>1 else '')+'$'+(str(int(n)) if n.is_integer() else f'{n:.2f}')
+def icon(name):
+ paths={'search':'<circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/>','bag':'<path d="M5 7h14l1 14H4L5 7Z"/><path d="M8 8V6a4 4 0 0 1 8 0v2"/>','arrow':'<path d="M5 19 19 5M5 5h14v14"/>','close':'<path d="m6 6 12 12M18 6 6 18"/>','menu':'<path d="M3 6h18M3 12h18M3 18h18"/>'}
+ return f'<svg viewBox="0 0 24 24" class="icon" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">{paths[name]}</svg>'
+APPLE='<svg class="logo-apple" viewBox="0 0 40 45" aria-hidden="true"><path d="M21 10c-5-5-17-2-18 8-2 12 8 25 15 24 2 0 3-2 5-1 9 2 18-17 13-27-3-6-11-8-15-4Z" fill="#d84e34"/><path d="M21 10c1-5-2-8-5-10" fill="none" stroke="#234386" stroke-width="2"/><path d="M22 5c7-7 14-4 14-4-1 7-8 10-14 4" fill="#6aa675"/></svg>'
+def logo():return f'<a class="brand" href="/" aria-label="The Juice Bar home"><span class="brand-over">the</span><span class="brand-name">juice b{APPLE}r</span><span class="brand-under">JUICE COMPANY</span></a>'
+def button(href,text,cls=''):return f'<a class="button {cls}" href="{href}">{text}{icon("arrow")}</a>'
+def card(p):
+ action=f'<a class="quick-add" href="/products/{p["handle"]}/" aria-label="Choose options for {e(p["title"])}">{icon("arrow")}</a>' if len(p['variants'])>1 or p['category']=='1-2-gallon-jugs' else f'<button class="quick-add" data-add="{p["handle"]}" aria-label="Add {e(p["title"])} to bag">+</button>'
+ return f'<article class="product-card" data-product="{p["handle"]}"><div class="card-image"><a href="/products/{p["handle"]}/"><img src="{p["images"][0]}" alt="{e(p["title"])}" loading="lazy"></a><span class="card-tag">{e(p["flavour"])}</span>{action}</div><div class="card-heading"><h3><a href="/products/{p["handle"]}/">{e(p["title"])}</a></h3><span class="price">{price(p)}</span></div><p class="card-ingredients">{e(' · '.join(p['ingredients']) if p['ingredients'] else p['flavour'])}</p></article>'
+def grid(handles):return '<div class="product-grid">'+''.join(card(P[h]) for h in handles)+'</div>'
+def header():
+ links=''.join(f'<a href="/collections/{c["handle"]}/">{c["title"]}<span>↗</span></a>' for c in COLLECTIONS)
+ return f'''<a class="skip" href="#main">Skip to content</a><div class="announcement"><a href="/collections/juice-cleanse/">Same-day pickup on all juice cleanses <span>↗</span></a><span class="announcement-local">Fresh from Pennsauken, NJ</span></div><header class="site-header">{logo()}<nav class="desktop-nav" aria-label="Main navigation"><a href="/collections/all/">Shop the good stuff</a><a href="/collections/juice-cleanse/">Juice cleanses</a><a href="/pages/about-us/">Our story</a></nav><div class="header-actions"><button data-open="search-dialog" aria-label="Search the store">{icon('search')}</button><button class="bag-button" data-open="cart-dialog" aria-label="Open shopping bag">{icon('bag')}<span data-cart-count>0</span></button><button data-open="menu-dialog" class="menu-button" aria-label="Open menu">{icon('menu')}</button></div></header><dialog id="menu-dialog" class="menu-dialog"><div class="dialog-top"><span class="eyebrow">The Juice Bar</span><button data-close aria-label="Close menu">{icon('close')}</button></div><nav aria-label="All collections">{links}<a href="/pages/about-us/">Our story<span>↗</span></a><a href="/blogs/news/">The Juice Journal<span>↗</span></a><a href="/pages/contact-us/">Visit &amp; contact<span>↗</span></a></nav><div class="menu-bottom"><a href="https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US">My account ↗</a><a href="tel:+18563240436">(856) 324-0436</a></div></dialog><dialog id="search-dialog" class="search-dialog"><div class="dialog-top"><span class="eyebrow">Find your next good sip</span><button data-close aria-label="Close search">{icon('close')}</button></div><form action="/search/" class="search-form"><label for="header-search">Search products or ingredients</label><div><input type="search" id="header-search" name="q" placeholder="Try ginger, green juice, sea moss…" required><button aria-label="Submit search">{icon('search')}</button></div></form><p class="muted">Or start with <a href="/collections/frontpage/">juices</a>, <a href="/collections/juice-cleanse/">cleanses</a>, or <a href="/collections/wellness-shots/">shots</a>.</p></dialog><dialog id="cart-dialog" class="cart-dialog"><div class="dialog-top"><h2>Your good stuff</h2><button data-close aria-label="Close shopping bag">{icon('close')}</button></div><div data-cart-content></div><a class="text-link" href="/cart/">View your full bag ↗</a></dialog><div class="toast" role="status" aria-live="polite" id="toast"></div>'''
+def footer():
+ return f'''<section class="newsletter"><div><p class="eyebrow">A fresh little note, now and then</p><h2>GOOD THINGS<br>ARE GROWING.</h2><p>New flavours. Fresh drops. A little news from your neighbourhood Juice Bar.</p></div><form class="newsletter-form"><label for="newsletter-email">Your email address</label><div><input id="newsletter-email" type="email" placeholder="you@example.com" required autocomplete="email"><button type="submit" aria-label="Subscribe to newsletter">{icon('arrow')}</button></div><p role="status" aria-live="polite"></p></form></section><footer class="site-footer"><div>{logo()}<p>Fruit, veg &amp; good vibes.<br>Fresh from our family to yours.</p></div><div><h3>Find your good stuff</h3><a href="/collections/frontpage/">Cold-pressed juices</a><a href="/collections/juice-cleanse/">Juice cleanse packages</a><a href="/collections/wellness-shots/">Wellness shots</a><a href="/collections/sea-moss/">Sea moss gel</a><a href="/collections/1-2-gallon-jugs/">Half-gallon jugs</a><a href="/collections/gift-cards/">Gift cards</a></div><div><h3>A little more Juice Bar</h3><a href="/pages/about-us/">Our story</a><a href="/blogs/news/">The Juice Journal</a><a href="/pages/contact-us/">Visit &amp; contact</a><a href="/pages/faq/">Questions &amp; order help</a><a href="https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US">My account ↗</a></div><div class="footer-contact"><h3>Come say hello</h3><p>6009 Mansion Blvd<br>Pennsauken, NJ 08109</p><a href="tel:+18563240436">(856) 324-0436</a><a href="mailto:thejuicebar.merchantville@gmail.com">Email the team ↗</a></div><div class="footer-bottom"><span>© 2026 The Juice Bar Juice Company</span><span>A Digital Bar design concept</span><a href="/pages/contact-us/">Order questions &amp; policies ↗</a></div></footer><button class="contact-float" data-open="contact-dialog" aria-label="Contact the Juice Bar">Say hello <span>↗</span></button><dialog id="contact-dialog" class="search-dialog"><div class="dialog-top"><h2>Let’s talk juice.</h2><button data-close aria-label="Close contact">{icon('close')}</button></div><p>Questions about a blend, your pickup, or an order? Get in touch with the Juice Bar team.</p>{button('mailto:thejuicebar.merchantville@gmail.com','Email the team')}{button('tel:+18563240436','Call (856) 324-0436')}</dialog>'''
+def write(path,title,content,page=None,description='Fresh cold-pressed juice, cleanse packages, wellness shots, sea moss, and more. Family owned in Pennsauken, New Jersey.'):
+ target=DIST/path.strip('/')/'index.html' if path!='/' else DIST/'index.html';target.parent.mkdir(parents=True,exist_ok=True)
+ data=json.dumps(page or {},ensure_ascii=False).replace('</','<\\/')
+ target.write_text(f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{e(title)} | The Juice Bar</title><meta name="description" content="{e(description)}"><meta name="theme-color" content="#fbf9f6"><link rel="icon" href="/apple.svg" type="image/svg+xml"><link rel="stylesheet" href="/style.css"><script>window.JUICE_PAGE={data};</script><script src="/catalog.js" defer></script><script src="/app.js" defer></script></head><body class="page-{e((page or {}).get('type','content'))}">{header()}<main id="main">{content}</main>{footer()}</body></html>''')
+
+def cleanse_comparison():
+ out='<div class="cleanse-comparison">'
+ for days in [1,2,3]:
+  p=P[f'{days}-day-juice-cleanse'];out+=f'<a class="cleanse-option" href="/products/{p["handle"]}/"><span class="eyebrow">{days} '+('day' if days==1 else 'days')+f'</span><div class="cleanse-number">{days*6}<span>bottles</span></div><p>Six cold-pressed juices per day</p><div><strong>{price(p)}</strong><span>Choose package ↗</span></div></a>'
+ return out+'</div>'
+
+hero=f'''<section class="hero"><p class="eyebrow">Cold pressed. Freshly made. Full of good stuff.</p><h1 class="billboard mint">JUICY</h1><div class="hero-scene"><img class="hero-bottles" src="/assets/hero-juice.png" alt="Green Supreme, Sunny Day, and Beet It cold-pressed juices from the Juice Bar" fetchpriority="high"><div class="hero-stamp"><span>FRESH FRUIT</span><strong>good<br>vibes</strong><span>&amp; VIBRANT VEG</span></div><p class="hero-handwritten">Your daily<br>dose of<br>delicious.</p><svg class="botanical" viewBox="0 0 100 150" aria-hidden="true"><path d="M50 150V25M50 85C10 90 5 55 11 44c26 1 35 21 39 41Zm0-30c33-2 47-31 41-44C65 16 55 35 50 55ZM50 125c35-4 45-25 41-40-27 2-35 24-41 40Z"/></svg></div><div class="hero-products"><a href="/products/cold-pressed-juice/">Green Supreme <span>$6 ↗</span></a><a href="/products/cold-pressed-juice-1/">Sunny Day <span>$6 ↗</span></a><a href="/products/beet-it/">Beet It <span>$6 ↗</span></a></div><div class="hero-bottom"><p>Fresh fruit &amp; veg.<br>Bottled for your kind of day.</p><p class="handwritten">Taste a brighter day.</p>{button('/collections/frontpage/','Shop the juices')}</div></section>'''
+favourites=['cold-pressed-juice','cold-pressed-juice-1','beet-it','watermelon-punch']
+home=hero+'''<div class="ticker"><span>Family owned</span><b>✳</b><span>Cold pressed</span><b>✳</b><span>Fresh ingredients</span><b>✳</b><span>Made in Pennsauken</span></div>'''
+home+=f'''<section class="section favourites"><div class="section-heading"><div><p class="eyebrow">A fridge full of possibilities</p><h2>FIND YOUR<br>GOOD STUFF.</h2></div><p>Bright and fruity. Green and crisp. A little ginger kick. There’s a blend for every kind of taste.</p></div><div class="collection-tabs">{''.join(f'<a href="/collections/{c["handle"]}/">{c["short"]} ↗</a>' for c in COLLECTIONS)}</div>{grid(favourites)}<div class="section-action">{button('/collections/all/','Explore all 21 products')}</div></section>'''
+home+=f'''<section class="cleanse-feature section"><div class="section-heading"><div><p class="eyebrow">A little reset for your routine</p><h2>A FRESH<br>START.</h2></div><p>Pick your package. We’ll bring the juice.<br>Same-day pickup on every cleanse.</p></div><div class="cleanse-layout"><div class="cleanse-photo"><img src="{P['1-day-juice-cleanse']['images'][0]}" alt="One-day Juice Bar cleanse package" loading="lazy"><span class="photo-seal">6 JUICES<br>PER DAY</span></div><div><h3>One day or a few?<br>Make it your own.</h3><p>Choose a selection of six, twelve, or eighteen cold-pressed juices. Every package brings six juices for each day.</p>{cleanse_comparison()}<a class="text-link" href="/collections/juice-cleanse/">Compare all cleanse packages ↗</a></div></div></section>'''
+extras=[('wellness-shots','pineapple-ginger-shot','SMALL SIP.<br>BIG KICK.','Ginger shots from $1.'),('sea-moss','16-oz-sea-moss','YOUR DAILY<br>PLUS ONE.','Sea moss gel. Smoothie ready.'),('1-2-gallon-jugs','1-2-gallon-cold-pressed-juice','GOOD STUFF.<br>MORE OF IT.','Half-gallon favourites to share.')]
+home+='<section class="section"><div class="section-heading"><div><p class="eyebrow">There’s more where that came from</p><h2>LITTLE EXTRAS.<br>BIG PERSONALITY.</h2></div></div><div class="extras-grid">'+''.join(f'<a class="extra" href="/collections/{cat}/"><div><img src="{P[h]["images"][0]}" alt="{e(C[cat]["title"])}" loading="lazy"></div><p class="eyebrow">{e(C[cat]["title"])}</p><h3>{title}</h3><p>{text} <span>↗</span></p></a>' for cat,h,title,text in extras)+'</div></section>'
+home+=f'''<section class="story-section"><div class="story-photo"><img src="{P['3-day-juice-cleanse']['images'][0]}" alt="Freshly prepared Juice Bar juices" loading="lazy"><span class="story-caption">Our family. Your neighbourhood. Good juice.</span></div><div><p class="eyebrow">Rooted in our community</p><h2>FAMILY ROOTS.<br>FRESH<br>THINKING.</h2><p>We’re a family-owned and operated Juice Bar in Pennsauken, New Jersey. We believe fresh, high-quality juice should be an everyday possibility.</p><p>So we make cold-pressed blends with real fruits, vegetables, and herbs. Good ingredients. Good intentions. Plenty of flavour.</p>{button('/pages/about-us/','A little more about us')}</div></section>'''
+home+=f'''<section class="gift-banner"><p class="eyebrow">Freshness is a pretty good gift</p><h2>MAKE THEIR DAY.<br>LET THEM PICK.</h2><div><p>Digital gift cards from $10.<br>A little Juice Bar joy, delivered by email.</p>{button('/products/the-juice-bar-juice-company-gift-card/','Give the good stuff')}</div></section>'''
+def journal_cards():
+ return f'''<div class="journal-grid"><a href="/blogs/news/what-is-cold-pressed-juice/"><div class="journal-visual mint"><span>FRESH<br>PRESSED.</span><img src="{P['refresh']['images'][0]}" alt="Fresh cold-pressed juice" loading="lazy"></div><p class="eyebrow">The basics · 18 August 2021</p><h3>What is cold-pressed juice? ↗</h3></a><a href="/blogs/news/why-drink-cold-pressed-juice/"><div class="journal-visual butter"><span>GOOD<br>SIPS.</span><img src="{P['watermelon-punch']['images'][0]}" alt="Watermelon Punch juice" loading="lazy"></div><p class="eyebrow">Everyday inspiration · 25 August 2021</p><h3>Why drink cold-pressed juice? ↗</h3></a></div>'''
+home+=f'''<section class="section"><div class="section-heading"><div><p class="eyebrow">Pull up a chair</p><h2>THE JUICE<br>JOURNAL.</h2></div><a class="text-link" href="/blogs/news/">A little food for thought ↗</a></div>{journal_cards()}</section>'''
+write('/','Fresh by nature',home,{'type':'home'})
+
+def collection(c):
+ handles=c['products'];hero=f'<section class="collection-hero"><p class="eyebrow">{e(c["title"])}</p><h1 class="billboard {c["color"]}">{c["word"]}</h1><p>{e(c["desc"])}</p></section>'
+ if c['handle']=='juice-cleanse':hero+=f'<section class="section compact">{cleanse_comparison()}</section>'
+ if c['handle']=='1-2-gallon-jugs':hero+='<p class="collection-note">Your flavour, your jug. Choose your blend on the product page before adding it to your bag.</p>'
+ controls=f'<div class="shop-controls"><span data-results-count>{len(handles)} product{'s' if len(handles)!=1 else ''}</span><label>Sort by <select id="sort-products"><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="title">Name: A to Z</option></select></label></div>'
+ tabs='<nav class="collection-tabs" aria-label="Product categories"><a href="/collections/all/">All products</a>'+''.join(f'<a class="{"selected" if cat["handle"]==c["handle"] else ""}" href="/collections/{cat["handle"]}/">{cat["short"]}</a>' for cat in COLLECTIONS)+'</nav>'
+ write('/collections/'+c['handle'],c['title'],hero+'<section class="section shop-section">'+tabs+controls+grid(handles)+'<p class="no-results" hidden>No blends found. Try a different search.</p></section>',{'type':'collection','handle':c['handle']})
+for c in COLLECTIONS:collection(c)
+allc={'handle':'all','title':'Shop all products','short':'All','word':'GOOD STUFF','desc':'Every juice. Every little extra. All your Juice Bar favourites in one place.','color':'mint','products':[p['handle'] for p in PRODUCTS]}
+collection(allc)
+
+for p in PRODUCTS:
+ h=p['handle']; variants=p['variants'];v=variants[0]
+ options=''
+ if len(variants)>1:options='<label class="field-label" for="variant-select">Choose your gift amount</label><select name="variant" id="variant-select">'+''.join(f'<option value="{x["id"]}">{e(x["title"])}</option>' for x in variants)+'</select>'
+ else:options=f'<input type="hidden" name="variant" value="{v["id"]}">'
+ if h in ['1-2-gallon-cold-pressed-juice','1-2-gallon-alka-lime-strawberry-lemonade']:
+  flavours=[P[x]['title'] for x in C['frontpage']['products'] if x not in ['alka-lime','strawberry-lemonade']] if h=='1-2-gallon-cold-pressed-juice' else ['Alka-lime','Strawberry Lemonade']
+  options+='<label class="field-label" for="flavour-select">Choose your flavour</label><select name="flavour" id="flavour-select" required><option value="">Pick your blend</option>'+''.join(f'<option>{e(x)}</option>' for x in flavours)+'</select><p class="field-help">We’ll include this choice with your order notes at checkout.</p>'
+ ingredients='<div class="ingredients"><span class="eyebrow">What’s inside</span><ul>'+''.join(f'<li>{e(x)}</li>' for x in p['ingredients'])+'</ul></div>' if p['ingredients'] else ''
+ extra=''
+ if p['category']=='juice-cleanse':extra=f'<div class="product-facts"><span>{e(p["flavour"])}</span><span>6 juices per day</span><span>Same-day pickup</span></div>'
+ elif p['category']=='gift-cards':extra='<div class="product-facts"><span>Delivered by email</span><span>Redeem online</span></div>'
+ else:extra=f'<div class="product-facts"><span>{"Keep refrigerated" if p["category"]!="gift-cards" else "Digital delivery"}</span><span>{e(p["flavour"])}</span></div>'
+ thumbs=''.join(f'<button class="gallery-thumb {"active" if i==0 else ""}" data-gallery="{src}" aria-label="View photo {i+1} of {e(p["title"])}"><img src="{src}" alt="" loading="lazy"></button>' for i,src in enumerate(p['images']))
+ controls=f'<form id="product-form" data-handle="{h}">{options}<div class="buy-row"><div class="quantity"><button type="button" data-qty="-1" aria-label="Decrease quantity">−</button><input type="number" name="quantity" aria-label="Quantity" value="1" min="1" max="99"><button type="button" data-qty="1" aria-label="Increase quantity">+</button></div><button class="button add-main" type="submit">Add to bag <span data-product-price>{price(p)}</span>{icon("bag")}</button></div></form>'
+ detail=f'''<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>/</span><a href="/collections/{p['category']}/">{e(p['categoryTitle'])}</a><span>/</span><span>{e(p['title'])}</span></nav><section class="product-detail"><div class="product-gallery"><div class="main-product-image"><img id="product-main-image" src="{p['images'][0]}" alt="{e(p['title'])}" fetchpriority="high"></div><div class="gallery-thumbs">{thumbs}</div></div><div class="product-info"><p class="eyebrow">{e(p['categoryTitle'])}</p><h1>{e(p['title'])}</h1><p class="product-price" data-product-price>{price(p)}</p><p class="product-description">{e(p['description'])}</p>{ingredients}{controls}{extra}<details open><summary>{'Your package' if p['category']=='juice-cleanse' else 'Good to know'}</summary><p>{'Each package is a selection of cold-pressed juices, with six bottles per day. The store offers same-day pickup on all cleanse packages. Contact the team for preparation instructions and your pickup time.' if p['category']=='juice-cleanse' else 'Choose your quantity, add it to your bag, and complete your order through the Juice Bar’s secure Shopify checkout. Final availability and fulfilment options are confirmed there.'}</p></details><details><summary>Pickup &amp; order questions</summary><p>Pickup location: 6009 Mansion Blvd, Pennsauken, NJ 08109. Call <a href="tel:+18563240436">(856) 324-0436</a> for pickup times or questions about your order.</p></details></div></section>'''
+ related=[x for x in C[p['category']]['products'] if x!=h][:4]
+ if not related:related=favourites
+ detail+=f'<section class="section"><div class="section-heading"><div><p class="eyebrow">More good things</p><h2>KEEP THE<br>GOOD GOING.</h2></div></div>{grid(related)}</section>'
+ write('/products/'+h,p['title'],detail,{'type':'product','handle':h},p['description'])
+
+about=f'''<section class="editorial-hero"><p class="eyebrow">Our family. Our community. Our Juice Bar.</p><h1>FAMILY ROOTS.<br>FRESH THINKING.</h1><p>Good ingredients. Good intentions.<br>Fresh from Pennsauken, New Jersey.</p></section><section class="story-section"><div class="story-photo"><img src="{P['3-day-juice-cleanse']['images'][0]}" alt="A selection of the Juice Bar’s cold-pressed juices"><span class="story-caption">Family owned &amp; operated</span></div><div><p class="eyebrow">A little about us</p><h2>REAL FRUIT.<br>REAL PEOPLE.</h2><p>The Juice Bar Juice Company is a family-owned and operated business specialising in fresh, natural cold-pressed juice.</p><p>Our mission is to make high-quality juice an affordable, everyday alternative to the sugary drink options so often found in fast-food chains and grocery stores.</p><p>From our fruit-and-vegetable blends to sea moss, ginger shots, and cleanse packages, we’re here to bring a little more freshness to our community.</p>{button('/collections/all/','Meet the good stuff')}</div></section><section class="values section"><div><span>01</span><h3>Fresh ingredients</h3><p>Fruit, vegetables, and herbs are at the heart of our cold-pressed blends. Every product page shows what goes into your bottle.</p></div><div><span>02</span><h3>Everyday possibility</h3><p>A quick bottle, a little ginger shot, or a jug to share. There’s more than one way to make room for a good sip.</p></div><div><span>03</span><h3>Community roots</h3><p>Family owned in Pennsauken, NJ. Freshness starts close to home, and so do we.</p></div></section>'''
+write('/pages/about-us','Our story',about,{'type':'about'})
+contact='''<section class="editorial-hero"><p class="eyebrow">Come say hello</p><h1>YOUR LOCAL<br>GOOD STUFF.</h1><p>A question? A pickup? A little juice talk?<br>We’re right here in Pennsauken.</p></section><section class="contact-layout section"><div><p class="eyebrow">Visit the Juice Bar</p><h2>6009 Mansion Blvd<br>Pennsauken, NJ 08109</h2><p>Call the store for today’s hours and your pickup time.</p>'''+button('https://www.google.com/maps/search/?api=1&query=6009+Mansion+Blvd+Pennsauken+NJ+08109','Get directions')+'''<div class="contact-method"><span class="eyebrow">Give us a call</span><a href="tel:+18563240436">(856) 324-0436 ↗</a></div><div class="contact-method"><span class="eyebrow">Drop us a line</span><a href="mailto:thejuicebar.merchantville@gmail.com">thejuicebar.merchantville@gmail.com ↗</a></div><details><summary>Order, pickup &amp; refund questions</summary><p>Contact the team directly for help with an order, pickup availability, or refund questions. Shipping and final fulfilment options are shown at checkout.</p></details></div><div class="contact-note"><span class="handwritten">Good things<br>happen locally.</span><p class="eyebrow">Same-day pickup</p><h3>Pick your<br>juice cleanse.<br>We’ll get it ready.</h3><p>Same-day pickup is available on all juice cleanse packages. Get in touch to confirm your pickup time.</p>'''+button('/collections/juice-cleanse/','Explore juice cleanses')+'</div></section>'
+write('/pages/contact-us','Visit & contact',contact,{'type':'contact'})
+faq='''<section class="editorial-hero"><p class="eyebrow">A few good answers</p><h1>LET’S CLEAR<br>THINGS UP.</h1></section><section class="faq-list section">'''
+for q,a in [
+ ('What does cold pressed mean?','Cold pressing refers to how the juice is made: fresh produce is pressed to extract its juice, without applying heat in the pressing process.'),
+ ('What is inside each juice?','Every product page lists its ingredients. Some blends, including Alka-lime and Strawberry Lemonade, contain water and agave. Choose the blend that fits your taste.'),
+ ('What comes in a juice cleanse?','The 1 Day package has 6 juices for $36, the 2 Day package has 12 for $72, and the 3 Day package has 18 for $108. That’s six juices per day. Contact the team for preparation instructions.'),
+ ('Can I pick up my cleanse today?','The store advertises same-day pickup on all juice cleanses. Call (856) 324-0436 to confirm your pickup time.'),
+ ('Can I choose my half-gallon flavour?','Yes. Choose your flavour on the jug’s product page. Your selection is saved in your bag and included with your order notes when continuing to the store.'),
+ ('How do gift cards work?','Gift cards come in $10, $25, $50, and $100 amounts. They are delivered by email and are redeemable online.'),
+ ('How should I keep my juice?','The bottle labels say to keep refrigerated and shake well. Follow the instructions on your bottle, and contact the store with storage questions.'),
+ ('Where can I get order or refund help?','Call (856) 324-0436 or email thejuicebar.merchantville@gmail.com. The original site directs refund questions to its contact page. Final fulfilment options are shown at Shopify checkout.')]:
+ faq+=f'<details><summary>{e(q)}</summary><p>{e(a)}</p></details>'
+faq+='</section>';write('/pages/faq','Questions & order help',faq,{'type':'faq'})
+journal='<section class="editorial-hero"><p class="eyebrow">Fresh ideas from the Juice Bar</p><h1>THE JUICE<br>JOURNAL.</h1><p>A little knowledge. A little inspiration.<br>Something good to sip on.</p></section><section class="section">'+journal_cards()+'</section>'
+write('/blogs/news','The Juice Journal',journal,{'type':'journal'});write('/blogs/why-drink-cold-pressed-juice','The Juice Journal',journal,{'type':'journal'})
+articles=[('what-is-cold-pressed-juice','What is cold-pressed juice?','18 August 2021',[
+ ('It starts with the process.','“Cold pressed” describes the way produce becomes juice. It is about the pressing process, rather than the temperature of the finished bottle.'),
+ ('From produce to press.','A cold-press juicer prepares fresh produce into pulp. A hydraulic press then extracts the juice through a filtering cloth, separating the liquid from the pulp without using heat in the pressing step.'),
+ ('Fresh means refrigerated.','The Juice Bar’s bottles are labelled “Keep Refrigerated” and “Shake Well.” Follow the instructions on your bottle and enjoy the flavour of a freshly made blend.'),
+ ('Find your kind of fresh.','Greens and lime. Pineapple and orange. Beet and ginger. Browse the ingredients on each product page to find a blend that suits your taste.')]),
+ ('why-drink-cold-pressed-juice','Why drink cold-pressed juice?','25 August 2021',[
+ ('A fresh choice for a busy day.','A bottle of cold-pressed juice is a convenient way to enjoy the flavour of fruits, vegetables, and herbs when you are on the go.'),
+ ('Start with what you love.','If you like a bright fruit-forward blend, Sunny Day combines pineapple, apple, and orange. For something green and crisp, Green Supreme brings together kale, cucumber, apple, and lime.'),
+ ('Read what is in your bottle.','Every blend has its own ingredient list. Alka-lime and Strawberry Lemonade include water and agave; other blends pair fresh fruits, vegetables, and spices. Browse the product pages to make a choice that suits you.'),
+ ('Keep it simple.','Pick a flavour, keep your bottle refrigerated, shake well, and make a little room for a fresh sip in your day.')])]
+for handle,title,date,sections in articles:
+ content=f'<article class="article-page"><header><p class="eyebrow">The Juice Journal · {date}</p><h1>{e(title)}</h1><p class="article-deck">A little food for thought from your neighbourhood Juice Bar.</p></header><div class="article-body">'+''.join(f'<h2>{e(h)}</h2><p>{e(text)}</p>' for h,text in sections)+button('/collections/frontpage/','Find your next good sip')+'<a class="text-link" href="/blogs/news/">← Back to the journal</a></div></article>'
+ write('/blogs/news/'+handle,title,content,{'type':'article'})
+search='<section class="editorial-hero"><p class="eyebrow">Find your flavour</p><h1>WHAT ARE<br>YOU CRAVING?</h1></section><section class="section shop-section"><form class="search-form" id="catalog-search"><label for="catalog-query">Search products or ingredients</label><div><input type="search" name="q" id="catalog-query" placeholder="Try ginger, pineapple, sea moss…"><button aria-label="Search products">'+icon('search')+'</button></div></form><div class="shop-controls"><span data-results-count>21 products</span></div>'+grid([p['handle'] for p in PRODUCTS])+'<p class="no-results" hidden>No products found. Try another ingredient or blend.</p></section>'
+write('/search','Search the good stuff',search,{'type':'search'})
+cart='<section class="editorial-hero"><p class="eyebrow">Almost time for a good sip</p><h1>YOUR<br>GOOD STUFF.</h1></section><section class="section cart-page"><div data-cart-content></div></section>'
+write('/cart','Your bag',cart,{'type':'cart'})
+# Provide a meaningful missing-page recovery on static hosting.
+missing='<section class="editorial-hero"><p class="eyebrow">A little detour</p><h1>LET’S FIND<br>THE GOOD STUFF.</h1><p>This page is not on the menu.</p>'+button('/collections/all/','Explore the shop')+'</section>'
+write('/404','Page not found',missing,{'type':'notfound'});(DIST/'404.html').write_text((DIST/'404/index.html').read_text())
+(DIST/'apple.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 45">'+APPLE.split('>',1)[1])
+# Hand-off reports preserve source evidence separately from edited storefront copy.
+rows='\n'.join(f'| {e(p["sourceTitle"])} | {price(p)} | {p["categoryTitle"]} | {len(p["variants"])} |' for p in PRODUCTS)
+screens=json.load(open(RESEARCH/'screenshot-index.json'))
+report=f'''# Juice Bar Company website audit and redesign
+
+Prepared for Digital Bar. Audited October 12, 2026.
+
+## Evidence collected
+
+Source: https://thejuicebarjuicecompany.com/. Public sitemap, every public product, all six collections, two editorial articles, About, Contact, search, and empty cart were inspected. {len(screens)} screenshots include 37 desktop routes and five mobile template examples. Screenshot index: [screenshot-index.json](research/screenshot-index.json). Original HTML, product JSON, collection JSON, and asset provenance remain in research/. Customer authentication and payment are hosted by Shopify; no private account was inspected and no live purchase was made.
+
+## Offering
+
+21 products: ten juice/drink blends, three cleanse packages, three wellness shots, three half-gallon jugs, one sea moss gel, and one gift card with four denominations. Prices and variant IDs were captured from the public catalog.
+
+| Original product | Price | Category | Variants |
+|---|---|---|---|
+{rows}
+
+## Findings and changes
+
+The original homepage has an oversized raster logo and a rotating hero that competes with shopping navigation. Collections are distributed between a drawer and homepage sections; wellness shots are absent from the primary menu. The cold-pressed collection also includes the gift card. Ingredients and flavour selection are buried in descriptions, and jug flavour requests depend on checkout notes. Several product descriptions make medical or absolute nutrition claims; redesigned copy focuses on verifiable ingredients, flavour, size, and convenience. Original descriptions remain preserved in the source catalog for client review.
+
+The redesign gives all six categories clear navigation, introduces a static billboard hero with the client’s actual bottles, makes ingredients prominent, compares cleanse packages by price and bottle count, exposes jug flavour selection before add-to-cart, adds ingredient-aware search and sorting, and keeps the complete catalog. All product and content screens use the same visual system. The family-owned story, location, phone, and email are preserved. No invented hours, discounts, customer reviews, nutrition panels, or policies were added.
+
+## Integration and launch
+
+This is a private staged redesign, not a change to the live store. Catalog prices/availability are an audit snapshot. The local cart persists in the browser and builds a Shopify cart permalink with verified variant IDs, quantities, and jug notes. Shopify retains final checkout, payment, availability checks, fulfilment, gift-card delivery, and customer accounts. Newsletter signup remains a clearly identified staging preview until connected to the client’s Shopify marketing system. Direct phone/email contact works through native links.
+
+Before a production theme migration, client access is needed for live catalog sync, newsletter capture, native Shopify cart/checkout testing, published shipping/refund policy copy, pickup scheduling, and final brand/content approval. The existing source site does not publish operating hours or substantive refund/shipping policies in its visible public content; its refund link leads to Contact.
+
+## Reference and QA
+
+Visual direction: the user-approved Pa’lais × Hartzler design from this conversation. See DESIGN.md for role-based tokens and decisions. Validation covers public route availability, local links/assets, product coverage, desktop/mobile layout, search, sorting, image galleries, gift amounts, jug flavour selection, local cart persistence and totals, and checkout URL construction. No live order is submitted during QA.
+'''
+(ROOT/'AUDIT.md').write_text(report)
+gallery='<!doctype html><html><head><meta charset="utf-8"><title>Juice Bar source screenshot audit</title><style>body{font:16px sans-serif;margin:40px;color:#234386;background:#fbf9f6}main{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px}img{width:100%;height:300px;object-fit:cover;object-position:top;border:1px solid #ddd}a{color:inherit}h1{font-size:36px}</style></head><body><h1>Juice Bar Company — source audit</h1><p>42 source screenshots · October 12, 2026 · Digital Bar</p><main>'
+for s in screens:
+ gallery+=f'<article><a href="screenshots/{s["screenshot"]}"><img src="screenshots/{s["screenshot"]}" alt="{e(s["url"])}"></a><p><a href="{s["url"]}">{e(s["url"].replace("https://thejuicebarjuicecompany.com","") or "Homepage")}</a> · {s.get("viewport","desktop")}</p></article>'
+(RESEARCH/'screenshots.html').write_text(gallery+'</main></body></html>')
+print(json.dumps({'products':len(PRODUCTS),'collections':len(COLLECTIONS),'html_pages':len(list(DIST.rglob('index.html'))),'source_screenshots':len(screens)}))

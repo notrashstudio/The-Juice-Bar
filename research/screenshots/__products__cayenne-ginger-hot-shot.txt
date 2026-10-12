@@ -1,0 +1,84 @@
+- link "Skip to content":
+  - /url: "#MainContent"
+- banner:
+  - link "The Juice Bar Juice Company":
+    - /url: /
+    - img "The Juice Bar Juice Company"
+  - search:
+    - generic: Search
+    - searchbox "Search"
+    - button "Search":
+      - generic: Search
+  - link "Cart":
+    - /url: /cart
+    - generic: Cart
+  - navigation:
+    - button "Menu Site navigation":
+      - generic: Menu
+      - generic: Site navigation
+    - link "Account":
+      - /url: https://thejuicebarjuicecompany.com/customer_authentication/redirect?locale=en&region_country=US
+  - link "Same Day Pickup on All Juice Cleanses!":
+    - /url: /collections/juice-cleanse
+    - generic: Same Day Pickup on All Juice Cleanses!
+  - button "Close":
+    - generic: Close
+- main:
+  - link "Cayenne Ginger (Hot Shot!)":
+    - /url: //thejuicebarjuicecompany.com/cdn/shop/products/image_5eac4c2e-977b-4501-bad1-2c97bc96f0fa_1024x1024.jpg?v=1629845820
+    - img "Cayenne Ginger (Hot Shot!)"
+  - heading "Cayenne Ginger (Hot Shot!)" [level=1]
+  - list:
+    - generic: Regular price
+    - text: $2.00
+  - separator
+  - generic: Quantity
+  - textbox "Quantity": "1"
+  - button "Reduce item quantity by one":
+    - generic: −
+  - button "Increase item quantity by one":
+    - generic: +
+  - button "Add to Cart"
+  - link "More payment options":
+    - /url: "#"
+  - separator
+  - paragraph: A spicy shot of cold pressed orange ginger juice with a dash of cayenne pepper. Great for immune support, metabolism boost, cough & congestion, mucus, & allergies!
+  - separator
+  - generic: Share
+  - link "Share on Facebook":
+    - /url: //www.facebook.com/sharer.php?u=https://thejuicebarjuicecompany.com/products/cayenne-ginger-hot-shot
+    - generic: Share on Facebook
+  - link "Tweet on Twitter":
+    - /url: //twitter.com/share?text=Cayenne%20Ginger%20(Hot%20Shot!)&url=https://thejuicebarjuicecompany.com/products/cayenne-ginger-hot-shot
+    - generic: Tweet on Twitter
+  - link "Pin on Pinterest":
+    - /url: //pinterest.com/pin/create/button/?url=https://thejuicebarjuicecompany.com/products/cayenne-ginger-hot-shot&media=//thejuicebarjuicecompany.com/cdn/shop/products/image_5eac4c2e-977b-4501-bad1-2c97bc96f0fa_1024x1024.jpg?v=1629845820&description=Cayenne%20Ginger%20(Hot%20Shot!)
+    - generic: Pin on Pinterest
+- contentinfo:
+  - heading "Before you go!" [level=4]
+  - list:
+    - link "Contact Us":
+      - /url: /pages/contact-us
+    - link "Search":
+      - /url: /search
+    - link "Refund Policy":
+      - /url: /pages/contact-us
+  - text: © 2026,
+  - link "The Juice Bar Juice Company":
+    - /url: /
+  - text: .
+  - link "Powered by Shopify":
+    - /url: https://www.shopify.com?utm_campaign=poweredby&utm_medium=shopify&utm_source=onlinestore
+  - generic: Payment methods
+  - list:
+    - img "American Express"
+    - img "Apple Pay"
+    - img "Diners Club"
+    - img "Discover"
+    - img "Google Pay"
+    - img "Mastercard"
+    - img "PayPal"
+    - img "Shop Pay"
+    - img "Visa"
+- button "Chat":
+  - generic: Chat
