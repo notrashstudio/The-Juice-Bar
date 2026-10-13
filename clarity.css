@@ -40,3 +40,5 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 @media(max-width:700px){.cleanse-feature{border-radius:40% 3% 40% 3%/20px 5px 20px 5px}}
 
 .nav-arrow{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:middle}.fresh-actions .icon{width:19px;height:19px;stroke-width:1.65;stroke-linecap:butt;stroke-linejoin:miter}.menu-dialog nav .nav-arrow{align-self:center}
+
+@media(max-width:700px){.site-header .brand{width:120px}.site-header .brand-name{font-size:27px}.site-header .brand-over{font-size:8px}.site-header .brand-under{font-size:6px}.site-header .logo-apple{width:18px;height:21px}}
