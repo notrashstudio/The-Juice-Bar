@@ -25,3 +25,7 @@ Private staged redesign, not an edit to the live Shopify theme. All 21 catalog p
 ## Reading and photography refinement
 
 Small shopping and support text uses larger, darker type with comfortable line spacing. Ingredient lists, categories, prices, descriptions, form labels, and order notes receive the increase; the approved display heading sizes and hero composition are preserved. Product media now uses 20 edited studio photographs with softly colored backgrounds and clearer lighting. Real packaging, labels, and cleanse counts remain the invariants. See REFRESH.md, research/media.md and research/studio-photos.json for decisions, final files and exact prompts.
+
+## Bright white finish
+
+The approved Juice Bar/Pa’lais composition and display lettering remain. Apple is the bounded reference for pure white canvas, graphite body text, system UI typography, precise dividers, and restrained product framing. All page/section/dialog/form surfaces use white. Warm page fields and the hero yellow wash are removed. Color remains within the approved product photographs and navy brand/actions; no raster sharpen or brightness filters were added. Reference and role decisions are in REFRESH.md.
