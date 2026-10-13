@@ -11,3 +11,5 @@
 .fresh-hero{background:#fff}.fresh-art .sun-shape{background:#fff2d5}.fresh-bottles{width:650px;max-width:112%;margin-top:0;transform:none}.fresh-art .fresh-leaf{display:none}.fresh-art .art-caption{bottom:-12px}
 @media(max-width:700px){.fresh-art{height:360px;min-height:360px}.fresh-bottles{width:390px;max-width:108%}.fresh-art .sun-shape{inset:20px 0}.fresh-art .art-caption{bottom:-10px}}
 @media(max-width:700px){.fresh-art{height:auto;min-height:0;padding-bottom:36px}.fresh-bottles{width:390px;max-width:100%}.fresh-art .art-caption{bottom:0}.fresh-art .sun-shape{inset:12px 0 38px}}
+/* Final user direction: no coloured backdrop behind the hero artwork. */
+.fresh-art .sun-shape{display:none;background:transparent}
