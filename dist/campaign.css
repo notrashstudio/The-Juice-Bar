@@ -7,5 +7,5 @@
 
 /* Clear, complete six-bottle photography for A Fresh Start. */
 .page-home .cleanse-photo{background:transparent;border-radius:0;overflow:visible}
-.page-home .cleanse-photo>img{width:100%;height:auto;max-height:560px;object-fit:contain;display:block}
+.page-home .cleanse-photo>img{width:100%;height:auto;aspect-ratio:auto;padding:0;max-height:560px;object-fit:contain;display:block}
 @media(max-width:700px){.page-home .cleanse-photo>img{max-height:410px}}
