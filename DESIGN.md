@@ -21,3 +21,7 @@ QA: compare desktop/mobile render to the locked reference; verify page/asset cov
 ## Delivery scope
 
 Private staged redesign, not an edit to the live Shopify theme. All 21 catalog products and public content routes use the refined visual system. The local cart persists and links to the existing Shopify store for secure checkout. Customer accounts remain with Shopify. Newsletter signup remains a clearly identified preview pending integration. Source evidence, original screenshots, and integration limitations remain in AUDIT.md.
+
+## Reading and photography refinement
+
+Small shopping and support text uses larger, darker type with comfortable line spacing. Ingredient lists, categories, prices, descriptions, form labels, and order notes receive the increase; the approved display heading sizes and hero composition are preserved. Product media now uses 20 edited studio photographs with softly colored backgrounds and clearer lighting. Real packaging, labels, and cleanse counts remain the invariants. See REFRESH.md, research/media.md and research/studio-photos.json for decisions, final files and exact prompts.

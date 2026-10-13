@@ -17,3 +17,9 @@ Reference lock: Pa’lais (https://www.palais.bio/, Refero style 96e33985-645f-4
 Reject: giant background words on every page, multiple stamps and competing hero captions, repeated oversized slogan sections, heavy card borders, decorative shadows on controls, and unsupported product promises.
 
 QA: compare desktop/mobile render to the locked reference; verify page/asset coverage and core product/cart interactions after visual changes. Production integration limitations remain in AUDIT.md.
+
+## Readability and catalog photography — October 13
+
+Keep the approved hero composition, large display headings, and overall layout. Increase small support text: ingredient lists 14px desktop/13px mobile, collection links 15px/13px, prices 15px/14px, and product descriptions 16px/15px. Increase line spacing and retain dark ink contrast. Small utility labels use 11–13px; forms stay at 16px where appropriate. Navigation collapses before the larger labels can crowd the header.
+
+Replace dull or distracting product backgrounds with consistently lit, soft pastel studio photographs. Use the original client photos as edit targets. Preserve actual container shape, drink color, caps, branding and readable label text. Shots retain their real cup packaging, jugs retain their actual no-label containers, and cleanse packages retain exact 6/12/18 bottle counts. Use built-in ImageGen, not code-based photo manipulation. Every currently displayed catalog image is reviewed; originals stay in the source audit rather than being mixed with the polished storefront images.

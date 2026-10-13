@@ -1,0 +1,182 @@
+[
+  {
+    "handle": "cold-pressed-juice",
+    "source": "cold-pressed-juice-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean pale sage green #e8efdf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: cold-pressed-juice. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-28457e71-cc1c-4c5f-af51-94bed7669606.png",
+    "path": "/assets/studio/cold-pressed-juice.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sage green #e8efdf"
+  },
+  {
+    "handle": "cold-pressed-juice-1",
+    "source": "cold-pressed-juice-1-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean soft butter yellow #fff1cf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: cold-pressed-juice-1. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-35d3a60a-29ad-4832-a1a0-9fbbb98c6854.png",
+    "path": "/assets/studio/cold-pressed-juice-1.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft butter yellow #fff1cf"
+  },
+  {
+    "handle": "beet-it",
+    "source": "beet-it-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean soft rose pink #f4dfdf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: beet-it. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-3d22cad9-ee73-4246-90c4-97d4cfbbd0ce.png",
+    "path": "/assets/studio/beet-it.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft rose pink #f4dfdf"
+  },
+  {
+    "handle": "pineapple-ginger-shot",
+    "source": "pineapple-ginger-shot-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean soft warm butter yellow #fff1cf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: pineapple-ginger-shot. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-030a0659-d3c3-44a5-bc5d-beec880ed5d7.png",
+    "path": "/assets/studio/pineapple-ginger-shot.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft warm butter yellow #fff1cf"
+  },
+  {
+    "handle": "16-oz-sea-moss",
+    "source": "16-oz-sea-moss-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean pale sky blue #e3eff7 seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: 16-oz-sea-moss. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-e9cdba23-ee8a-4fd2-83c8-91b7ab6dde64.png",
+    "path": "/assets/studio/16-oz-sea-moss.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sky blue #e3eff7"
+  },
+  {
+    "handle": "1-2-gallon-cold-pressed-juice",
+    "source": "1-2-gallon-cold-pressed-juice-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create one polished ecommerce product photograph, square composition. Replace the existing background with a clean pale lavender rose #f0e5ed seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real product. Center the entire original product upright, fully visible, about 75% of image height, no wider than 60% of frame, ample empty margins. Keep exact packaging shape, cap/lid, juice or gel color, logo, original label artwork and every readable word exactly unchanged. Do not invent or rewrite label text. If cropped in the source, reconstruct only the natural continuation of that same container. Remove any hand, wrist, surrounding room, counter or other distracting objects; retain only the real product container(s). For shot cups preserve the existing clear cup and lid packaging; do not invent branded bottles. Product: 1-2-gallon-cold-pressed-juice. No props, no ingredients outside the packaging, no headlines, no new claims, no watermark. Result should feel fresh, premium, clean and consistent with the hero's clear product presentation.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-c143ed9b-0766-47f9-b224-a0936d754ae3.png",
+    "path": "/assets/studio/1-2-gallon-cold-pressed-juice.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale lavender rose #f0e5ed"
+  },
+  {
+    "handle": "alka-lime",
+    "source": "alka-lime-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean pale sky blue #e3eff7 seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: alka-lime. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-1cb0c8ce-d516-4ce2-882b-4bf7dcd15af6.png",
+    "path": "/assets/studio/alka-lime.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sky blue #e3eff7"
+  },
+  {
+    "handle": "flu-shot",
+    "source": "flu-shot-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean soft butter yellow #fff1cf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: flu-shot. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-10bb4793-443c-4d9e-b50d-2ba5e1411939.png",
+    "path": "/assets/studio/flu-shot.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft butter yellow #fff1cf"
+  },
+  {
+    "handle": "ginger-ale",
+    "source": "ginger-ale-0.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean pale sage green #e8efdf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: ginger-ale. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-c83fd8ef-a935-4e0a-a284-7ad333eed3e3.png",
+    "path": "/assets/studio/ginger-ale.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sage green #e8efdf"
+  },
+  {
+    "handle": "refresh",
+    "source": "refresh-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean pale cool mint #e4f0e7 seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: refresh. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-c5f94139-5b85-49bb-b5d6-fe43fee891a9.png",
+    "path": "/assets/studio/refresh.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale cool mint #e4f0e7"
+  },
+  {
+    "handle": "strawberry-lemonade",
+    "source": "strawberry-lemonade-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean soft rose pink #f4dfdf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: strawberry-lemonade. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-0131dfee-24e9-4f28-bed0-674c0730b104.png",
+    "path": "/assets/studio/strawberry-lemonade.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft rose pink #f4dfdf"
+  },
+  {
+    "handle": "wake-up",
+    "source": "wake-up-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean light warm apricot #fce7d3 seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: wake-up. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-5d7c7820-ddc1-46a4-b7b4-2bf1cb362c20.png",
+    "path": "/assets/studio/wake-up.jpg",
+    "method": "built-in ImageGen",
+    "background": "light warm apricot #fce7d3"
+  },
+  {
+    "handle": "watermelon-punch",
+    "source": "watermelon-punch-1.jpg",
+    "prompt": "Use case: precise-object-edit. Edit target: attached actual Juice Bar product photo. Create ONE polished ecommerce product photograph, square composition. Replace background with a clean soft rose pink #f4dfdf seamless studio backdrop and matching matte surface, very subtle soft daylight falloff and realistic soft contact shadow. Improve lighting, crisp edges and clarity without changing the real bottle. Center ONE complete original bottle upright, fully visible, about 75% of image height and no wider than 60% of the frame, ample clean margins. Keep exact container shape, white cap, actual juice color, logo, label artwork and ALL readable original label text unchanged. Do not invent or rewrite labels. Product: watermelon-punch. Remove any hand, room, shop signage, screenshot UI, table or distracting objects. Preserve actual drink appearance and natural texture. No props, additional ingredients, headlines, watermark, new label claims or extra bottles. Sharp commercial photography consistent with the existing clear three-bottle homepage hero.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-14847673-81ea-4baa-af2f-258eca7d628a.png",
+    "path": "/assets/studio/watermelon-punch.jpg",
+    "method": "built-in ImageGen",
+    "background": "soft rose pink #f4dfdf"
+  },
+  {
+    "handle": "apple-ginger-shot",
+    "source": "apple-ginger-shot-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean pale sage green #e8efdf seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve the actual two clear shot cups, one open in front and one lidded behind, the lid's A mark and the original juice color. Never invent bottled packaging or a brand label. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-822d16c4-8a00-4fe5-ba2b-8f1f2a3cc23c.png",
+    "path": "/assets/studio/apple-ginger-shot.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sage green #e8efdf"
+  },
+  {
+    "handle": "cayenne-ginger-hot-shot",
+    "source": "cayenne-ginger-hot-shot-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean light warm apricot #fce7d3 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve the actual two clear shot cups, one open in front and one lidded behind, the lid's H mark and original golden-orange juice color with spice flecks. Never invent bottled packaging or a brand label. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-7089efda-b9d7-4b64-b18f-55b3af35761d.png",
+    "path": "/assets/studio/cayenne-ginger-hot-shot.jpg",
+    "method": "built-in ImageGen",
+    "background": "light warm apricot #fce7d3"
+  },
+  {
+    "handle": "1-2-gallon-alka-lime-strawberry-lemonade",
+    "source": "1-2-gallon-alka-lime-strawberry-lemonade-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean pale sky blue #e3eff7 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve both actual half-gallon jugs, their cap and container shapes, liquid color, and no-label packaging exactly. Do not add logos, change contents or add a jug. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-83593fe5-89ea-4ba7-95b2-760cb6c9bc1a.png",
+    "path": "/assets/studio/1-2-gallon-alka-lime-strawberry-lemonade.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale sky blue #e3eff7"
+  },
+  {
+    "handle": "1-2-gallon-elderberry-tea",
+    "source": "1-2-gallon-elderberry-tea-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean pale lavender #ebe7f3 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve the ONE actual half-gallon elderberry jug, cap, shape, realistic condensation, and dark wine-purple tea color exactly. Keep its no-label packaging; do not invent a brand label. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-e41aca67-6ae8-4f01-8c49-4680724fd68f.png",
+    "path": "/assets/studio/1-2-gallon-elderberry-tea.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale lavender #ebe7f3"
+  },
+  {
+    "handle": "1-day-juice-cleanse",
+    "source": "1-day-juice-cleanse-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean warm neutral cream #f7f3e8 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve exactly SIX actual bottles, their original juice colors, arrangement, caps, logos and label artwork. Keep all readable existing label text exactly, including original black logo panels. Do not substitute the newer white logo design. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-506e6a5d-10d0-4a11-b081-957d0dac1192.png",
+    "path": "/assets/studio/1-day-juice-cleanse.jpg",
+    "method": "built-in ImageGen",
+    "background": "warm neutral cream #f7f3e8"
+  },
+  {
+    "handle": "2-day-juice-cleanse",
+    "source": "2-day-juice-cleanse-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean pale cool mint #e4f0e7 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve the exact top-down view of TWELVE real bottles arranged in TWO columns and SIX rows, with cap numbers 1 through 6 repeated twice and actual juice colors. Do not invent front-facing label artwork that is not visible in the source. Make the far bottles as clear as the near ones. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-c8f2e1be-5274-419c-b700-910e6804706a.png",
+    "path": "/assets/studio/2-day-juice-cleanse.jpg",
+    "method": "built-in ImageGen",
+    "background": "pale cool mint #e4f0e7"
+  },
+  {
+    "handle": "3-day-juice-cleanse",
+    "source": "3-day-juice-cleanse-0.jpg",
+    "prompt": "Use case: precise-object-edit. Asset: square ecommerce studio photograph for The Juice Bar. Edit the attached real product photo. Replace only the distracting backdrop/counter/room/plants with a clean warm neutral cream #f7f3e8 seamless studio surface and backdrop, subtle natural daylight, soft realistic contact shadows. Improve sharpness and even exposure so the actual contents and container are clear and appetizing. Preserve the exact top-down view of EIGHTEEN real bottles arranged in THREE columns and SIX rows, cap numbers 1 through 6 repeated three times, and actual juice colors. Do not invent front-facing label artwork that is not visible. Keep exactly eighteen bottles. Keep the full product or complete group centered and fully visible, with ample margins, occupying about 72-78% of image height, and at most 62% of the image width so the image can also fit a portrait card. Preserve natural container proportions; no stretched packaging. If an edge was cropped, restore only its natural continuation. No hands, room furniture, props, added fruit, headlines, watermark, invented claims or extra products. Never replace or alter original label wording. Create consistent premium advertising-ready photography, retain real physical product identity.",
+    "generatedPath": "/Users/gloriaamagbakhen/.codex/generated_images/01a130e3-1c67-7b20-9da5-3815842ac0a8/exec-e277f193-ea55-42a3-93b3-88bc0e069afd.png",
+    "path": "/assets/studio/3-day-juice-cleanse.jpg",
+    "method": "built-in ImageGen",
+    "background": "warm neutral cream #f7f3e8"
+  }
+]
