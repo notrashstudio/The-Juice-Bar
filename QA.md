@@ -27,3 +27,6 @@ Twenty built-in ImageGen photo edits were inspected against original product ref
 ## Bright white finish
 
 117 checks passed across all 39 routes at 1440px, 390px, and 320px. Body and every main section/dialog/form canvas is #ffffff; body reading text is #1d1d1f. No horizontal overflow, unexpected tinted page surfaces, or broken loaded images. Evidence: research/bright-white-qa.json. The approved high-resolution product assets, large heading sizes, shopping functionality, and larger reading sizes remain intact. Desktop/mobile landing-page screenshots are research/bright-white-hero.jpg and research/bright-white-mobile.jpg.
+
+
+Color correction: restore navy reading text, pale yellow hero and gift backgrounds, warm section bands, and borderless header. Keep pure white white-area canvases, system UI typography, enlarged reading sizes, and studio photos. Browser computed styles confirmed navy ink, white body, yellow hero/gift, warm ticker/cleanse, and zero header border. CSS-only update; generated routes unchanged.

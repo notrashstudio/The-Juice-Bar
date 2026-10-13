@@ -27,3 +27,6 @@ Replace dull or distracting product backgrounds with consistently lit, soft past
 ## Bright white finish
 
 User-directed reference lock: retain the approved Juice Bar layout and display typography; use Apple homepage (Refero e02fcb85-b3eb-4b9e-985f-ab2044beb6cc, https://www.apple.com/) only for pure white surfaces, precise system UI typography, graphite reading text, subtle neutral dividers, and restrained image framing. Pa’lais retains the display headings and organic composition. All page/section/dialog/form canvases use #ffffff; remove warm cream section fields and the yellow hero wash. Color remains inside the approved high-resolution studio photographs and the Juice Bar’s navy brand/actions. No new raster edits or artificial sharpening filters; the actual sharp studio assets from the preceding pass remain intact. Preserve the larger reading sizes and responsive behavior.
+
+
+Color correction: restore navy reading text, pale yellow hero and gift backgrounds, warm section bands, and borderless header. Keep pure white white-area canvases, system UI typography, enlarged reading sizes, and studio photos. Browser computed styles confirmed navy ink, white body, yellow hero/gift, warm ticker/cleanse, and zero header border. CSS-only update; generated routes unchanged.

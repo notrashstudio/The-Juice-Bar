@@ -29,3 +29,6 @@ Small shopping and support text uses larger, darker type with comfortable line s
 ## Bright white finish
 
 The approved Juice Bar/Pa’lais composition and display lettering remain. Apple is the bounded reference for pure white canvas, graphite body text, system UI typography, precise dividers, and restrained product framing. All page/section/dialog/form surfaces use white. Warm page fields and the hero yellow wash are removed. Color remains within the approved product photographs and navy brand/actions; no raster sharpen or brightness filters were added. Reference and role decisions are in REFRESH.md.
+
+
+Color correction: restore navy reading text, pale yellow hero and gift backgrounds, warm section bands, and borderless header. Keep pure white white-area canvases, system UI typography, enlarged reading sizes, and studio photos. Browser computed styles confirmed navy ink, white body, yellow hero/gift, warm ticker/cleanse, and zero header border. CSS-only update; generated routes unchanged.
