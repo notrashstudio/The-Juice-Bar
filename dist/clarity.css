@@ -10,3 +10,5 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 
 /* Preserve the approved colorful identity; brighten only formerly white canvases. */
 .site-header{border:0;box-shadow:none}.announcement{background:#fff;border:0}.ticker{background:#fbf9f6;border:0}.cleanse-feature{background:#fbf9f6;border:0}.gift-banner{background:#fff5d9;border:0}.newsletter{background:#fbf9f6;border:0}.sun-shape{background:#fff0bf;border:0}.contact-note{background:#fff2d5;border:0}.story-caption{background:#fffef4ee;color:#234386}.fresh-leaf{color:#234386}.collection-hero,.editorial-hero{background:#fff}.footer-bottom{color:#234386}.button.secondary,.story-section .button{border-color:#ed7328;color:#b95114}
+
+.fresh-actions .button.secondary{background:#fff;color:#234386;border-color:#234386}.fresh-actions .button.secondary:hover{background:#f5f7fc}
