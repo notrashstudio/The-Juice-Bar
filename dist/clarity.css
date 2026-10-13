@@ -38,3 +38,5 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 
 .cleanse-feature{border-radius:55% 4% 55% 4%/35px 15px 35px 15px}
 @media(max-width:700px){.cleanse-feature{border-radius:40% 3% 40% 3%/20px 5px 20px 5px}}
+
+.nav-arrow{width:18px;height:18px;flex-shrink:0;display:inline-block;vertical-align:middle}.fresh-actions .icon{width:19px;height:19px;stroke-width:1.65;stroke-linecap:butt;stroke-linejoin:miter}.menu-dialog nav .nav-arrow{align-self:center}
