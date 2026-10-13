@@ -15,3 +15,5 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 
 /* Compact package comparison on phones, shared by home and cleanse collection. */
 @media(max-width:700px){.cleanse-comparison{margin-top:18px;grid-template-columns:repeat(3,minmax(0,1fr))}.cleanse-option{padding:12px 8px;min-width:0}.cleanse-option .eyebrow{font-size:10px;letter-spacing:.06em}.cleanse-number{font-size:36px;line-height:1.05;margin:5px 0}.cleanse-number span{font-size:11px;margin-top:4px;line-height:1.2}.cleanse-option>p{font-size:11px;line-height:1.4;margin:8px 0}.cleanse-option>div:last-child{font-size:11px;line-height:1.4;gap:4px}.cleanse-option strong{font-size:13px}.cleanse-option>div:last-child>span{font-size:10px}}
+
+.cleanse-option{text-align:center}.cleanse-option>div:last-child{align-items:center}
