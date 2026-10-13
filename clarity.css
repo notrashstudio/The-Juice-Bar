@@ -1,0 +1,40 @@
+/* Bright white finish. Preserve the approved composition and display headings. */
+:root{--cream:#ffffff;--line:#d6d6d6;--reading-ink:#234386;--ui-font:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica Neue",Arial,sans-serif}
+html,body{background:#ffffff}body{font-family:var(--ui-font);color:var(--reading-ink);font-weight:400;letter-spacing:0;line-height:1.75}
+h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-note .handwritten{color:#234386}
+.site-header,.fresh-hero,.section,.story-section,.newsletter,.gift-banner,.cleanse-feature,.collection-hero,.editorial-hero,.site-footer,.ticker,.announcement,dialog,.contact-note{background:#ffffff}
+.site-header{border-bottom:1px solid #ededf0}.announcement{border-bottom:1px solid #ededf0}.ticker{border-top:1px solid #ededf0;border-bottom:1px solid #ededf0}.cleanse-feature,.gift-banner,.newsletter{border-top:1px solid #ededf0;border-bottom:1px solid #ededf0}.sun-shape{background:transparent;border:0}.fresh-leaf{opacity:.85;color:#234386}.fresh-leaf g{stroke-width:1.5}
+.desktop-nav,.eyebrow,.button,.text-link,.hero-pickup,.ticker,.collection-tabs a,.card-heading h3,.price,.card-ingredients,.card-tag,.cleanse-option,.cleanse-number span,.extra>p,.story-caption,.journal-grid .eyebrow,.site-footer,.breadcrumb,.product-price,.ingredients li,.field-label,.field-help,.product-facts,.quantity,.cart-line h3,.cart-total,.toast{font-family:var(--ui-font)}
+.desktop-nav,.header-actions,.eyebrow,.hero-pickup,.ticker,.collection-tabs a,.card-heading h3,.price,.breadcrumb,.product-price,.product-facts,.site-footer,.dialog-top{color:var(--reading-ink)}.desktop-nav,.card-heading h3,.price,.collection-tabs a{font-weight:500}.card-ingredients,.section-heading>p,.fresh-description,.product-description,.field-help,.newsletter p:not(.eyebrow),.cart-disclaimer,.muted{color:#234386;opacity:1}.eyebrow{font-weight:600;letter-spacing:.09em}.fresh-description{line-height:1.75}.card-heading h3{letter-spacing:-.015em}.price{font-variant-numeric:tabular-nums}.icon{stroke-width:1.65}.button{font-weight:500;letter-spacing:0}.button.primary,.add-main,.checkout{background:#234386;color:#fff}.button.secondary,.story-section .button{color:#234386;border-color:#234386}.button:hover{background:#f5f5f7}.button.primary:hover,.add-main:hover,.checkout:hover{background:#17356e}.text-link{color:#234386;border-color:#234386}.collection-tabs a:hover,.collection-tabs a.selected{color:#234386;border-bottom-color:#234386}.card-tag{background:#ffffff;color:#234386}.quick-add{background:#ffffff;color:#234386;border-color:#d6d6d6}.contact-float{background:#fff;color:#234386;border-color:#d6d6d6}.story-caption{background:#ffffff;color:#234386}.product-facts,.ingredients li{opacity:1}.gallery-thumb.active{border-color:#234386}.search-form>div,.newsletter-form>div{border-color:#234386}.newsletter-form input,.search-form input{background:#fff;color:#234386}.newsletter-form input::placeholder,.search-form input::placeholder{color:#234386;opacity:1}#product-form select,.cart-notes textarea{background:#fff;color:#234386;border-color:#d6d6d6}.footer-bottom{color:#234386}.cart-line{border-color:#d6d6d6}.brand{color:#234386}.contact-note{border:1px solid #ededf0}.cleanse-photo,.story-photo,.main-product-image{box-shadow:none}.product-card img,.fresh-bottles,.extra img,.journal-visual img,.main-product-image img{image-rendering:auto;opacity:1;filter:none}.button,.card-image,.main-product-image,.journal-visual{box-shadow:none}
+@media(max-width:700px){.fresh-description{line-height:1.75}.card-ingredients{color:#234386}.site-header{background:#fff}.fresh-copy>.eyebrow{color:#234386}}
+
+/* Preserve the approved colorful identity; brighten only formerly white canvases. */
+.site-header{border:0;box-shadow:none}.announcement{background:#fff;border:0}.ticker{background:#fbf9f6;border:0}.cleanse-feature{background:#fbf9f6;border:0}.gift-banner{background:#fff5d9;border:0}.newsletter{background:#fbf9f6;border:0}.sun-shape{background:#fff0bf;border:0}.contact-note{background:#fff2d5;border:0}.story-caption{background:#fffef4ee;color:#234386}.fresh-leaf{color:#234386}.collection-hero,.editorial-hero{background:#fff}.footer-bottom{color:#234386}.button.secondary,.story-section .button{border-color:#ed7328;color:#b95114}
+
+.fresh-actions .button.secondary{background:#fff;color:#234386;border-color:#234386}.fresh-actions .button.secondary:hover{background:#f5f7fc}
+
+/* Compact package comparison on phones, shared by home and cleanse collection. */
+@media(max-width:700px){.cleanse-comparison{margin-top:18px;grid-template-columns:repeat(3,minmax(0,1fr))}.cleanse-option{padding:12px 8px;min-width:0}.cleanse-option .eyebrow{font-size:10px;letter-spacing:.06em}.cleanse-number{font-size:36px;line-height:1.05;margin:5px 0}.cleanse-number span{font-size:11px;margin-top:4px;line-height:1.2}.cleanse-option>p{font-size:11px;line-height:1.4;margin:8px 0}.cleanse-option>div:last-child{font-size:11px;line-height:1.4;gap:4px}.cleanse-option strong{font-size:13px}.cleanse-option>div:last-child>span{font-size:10px}}
+
+.cleanse-option{text-align:center}.cleanse-option>div:last-child{align-items:center}
+
+/* Consistent blue outlined secondary actions throughout the site. */
+.button.secondary,.story-section .button{background:#fff;color:#234386;border-color:#234386}.button.secondary:hover,.story-section .button:hover{background:#f5f7fc;color:#234386;border-color:#234386}
+
+/* Cleanse feature adopts the warm pickup-panel treatment. */
+.cleanse-feature{background:#fff2d5;max-width:1330px;width:88%;margin:25px auto 55px;padding:50px;border-radius:35px 70px 30px 60px}.cleanse-layout h3{font-family:FreshDisplay,Work,sans-serif;font-size:40px;line-height:1.2;letter-spacing:.02em;word-spacing:.16em;margin:0 0 24px}.cleanse-feature .section-heading{margin-bottom:32px}.cleanse-feature .button{margin-top:25px}.cleanse-photo{border-radius:26px;background:#fff}.cleanse-photo>img{object-fit:cover}.cleanse-comparison{border-color:#23438630}.cleanse-option{border-color:#23438630}.cleanse-option:hover{background:#ffffff80}
+@media(max-width:700px){.cleanse-feature{width:90%;padding:30px 20px;margin:20px auto 35px;border-radius:30px 50px 25px 40px}.cleanse-layout h3{font-size:36px}.cleanse-feature .section-heading{margin-bottom:25px}.cleanse-feature .button{font-size:12px;padding:14px 18px;text-align:center}.cleanse-photo>img{max-height:330px}}
+
+/* Original photo and package composition, with the approved pickup styling. */
+.cleanse-feature{max-width:none;width:auto;margin:0;padding:85px 6%;border-radius:55% 4% 0 0/35px 15px 0 0}.cleanse-photo{border-radius:45% 50% 43% 45%/34% 46% 42% 50%;background:#6aa8dc20}.cleanse-photo>img{max-height:510px}.cleanse-feature .section-heading{margin-bottom:32px}
+@media(max-width:700px){.cleanse-feature{width:auto;margin:0;padding:55px 5%;border-radius:40% 3% 0 0/20px 5px 0 0}.cleanse-photo>img{max-height:370px}.cleanse-feature .section-heading{margin-bottom:28px}}
+
+.sun-shape,.cleanse-photo{background:#fff2d5}
+
+.fresh-hero{background:#fff;max-width:1600px}.sun-shape{background:#fff2d5}
+
+
+.cleanse-feature .button.secondary{background:#fff2d5}.cleanse-feature .button.secondary:hover{background:#ffebbd}
+
+.cleanse-feature{border-radius:55% 4% 55% 4%/35px 15px 35px 15px}
+@media(max-width:700px){.cleanse-feature{border-radius:40% 3% 40% 3%/20px 5px 20px 5px}}
