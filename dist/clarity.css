@@ -28,3 +28,5 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 /* Original photo and package composition, with the approved pickup styling. */
 .cleanse-feature{max-width:none;width:auto;margin:0;padding:85px 6%;border-radius:55% 4% 0 0/35px 15px 0 0}.cleanse-photo{border-radius:45% 50% 43% 45%/34% 46% 42% 50%;background:#6aa8dc20}.cleanse-photo>img{max-height:510px}.cleanse-feature .section-heading{margin-bottom:32px}
 @media(max-width:700px){.cleanse-feature{width:auto;margin:0;padding:55px 5%;border-radius:40% 3% 0 0/20px 5px 0 0}.cleanse-photo>img{max-height:370px}.cleanse-feature .section-heading{margin-bottom:28px}}
+
+.sun-shape,.cleanse-photo{background:#fff2d5}
