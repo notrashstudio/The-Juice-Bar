@@ -4,3 +4,8 @@
 @media(max-width:700px){.fresh-art{height:auto;min-height:0;padding-bottom:36px}.fresh-bottles{width:390px;max-width:100%}.fresh-art .art-caption{bottom:0}.fresh-art .sun-shape{inset:12px 0 38px}}
 /* Final user direction: no coloured backdrop behind the hero artwork. */
 .fresh-art .sun-shape{display:none;background:transparent}
+
+/* Clear, complete six-bottle photography for A Fresh Start. */
+.page-home .cleanse-photo{background:transparent;border-radius:0;overflow:visible}
+.page-home .cleanse-photo>img{width:100%;height:auto;max-height:560px;object-fit:contain;display:block}
+@media(max-width:700px){.page-home .cleanse-photo>img{max-height:410px}}
