@@ -32,3 +32,9 @@ h1,h2,.fresh-script,.art-caption,.cleanse-layout h3,.journal-grid h3,.contact-no
 .sun-shape,.cleanse-photo{background:#fff2d5}
 
 .fresh-hero{background:#fff2d5;max-width:none}.sun-shape{background:#fff2d5}
+
+/* Warm yellow is the primary site canvas; white supports actions and inputs. */
+:root{--cream:#fff2d5}
+html,body,.site-header,.fresh-hero,.section,.story-section,.newsletter,.gift-banner,.cleanse-feature,.collection-hero,.editorial-hero,.site-footer,.ticker,.announcement,dialog,.contact-note{background:#fff2d5}
+.site-header{border:0}.ticker,.newsletter,.gift-banner{border-color:#23438620}.card-tag,.quick-add,.contact-float,.story-caption,.button.secondary,.story-section .button,.newsletter-form input,.search-form input,#product-form select,.cart-notes textarea{background:#fff}.cleanse-photo,.sun-shape{background:#fff2d5}
+@media(max-width:700px){.site-header{background:#fff2d5}}
